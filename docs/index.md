@@ -15,15 +15,15 @@ Engineering Test Management is a collaborative, web-based tool for planning, con
 | DevOps Test Performance | Test Performance is a scripting-free environment for automating load and scalability testing of web, ERP, and server-based software applications. Test Performance provides rich and customizable reporting to help you identify the presence and cause of system bottlenecks. It captures the network traffic that is rendered when the application under test interacts with a server. This network traffic is then emulated on multiple virtual users while you play back the test. | [Overview](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=started-devops-test-performance-overview) |
 
 ### Why integrate IBM DevOps Test Automation with IBM Engineering Test Management
-While test automation is not a "silver bullet" and is often misused as a means or reason to reduce the size of test teams, test automation does provide organizations with numerous benefits. Automating tests:</br>
+While test automation is not a "silver bullet" and is often misused as a means or reason to reduce the size of test teams, test automation does provide organizations with numerous benefits. Automating tests can:</br>
 | **Value Proposition**  | **Explaination** |
 |:-------------:|:------------- |
-| Can save organizations time and money | |
-| Can help test increase test coverage | |
-| Can improve testing accuracy | |
-| Can expand test capability | |
-| Can accelerate feeback on software quality | |
-| Can improve team morale | |
+| Save organizations time and money | |
+| Help test increase test coverage | |
+| Improve testing accuracy | |
+| Expand test capability | |
+| Accelerate feeback on software quality | |
+| Improve team morale | |
 
 
 ### About this workbook
