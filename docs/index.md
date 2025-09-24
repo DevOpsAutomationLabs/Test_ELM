@@ -1,10 +1,10 @@
-# Integrate DevOps Test with Enterprise Test Management (ETM) to accelerate the test cycle by automating test execution.
+# Integrate DevOps Test with Engineering Test Management (ETM) to accelerate the test cycle automating test execution.
 
 ## About the IBM Solution
 
-### IBM Enterprise Test Management
+**IBM Engineering Test Management**
 
-### IBM DevOps Test Automation
+**IBM DevOps Test Automation**
 
 | **Product Name** | <div style="width:250px">**Description**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
@@ -13,11 +13,11 @@
 | DevOps Test Integrations and APIs | Test Integrations and APIs is an integration testing and virtualization tool that includes capabilities to automate and run tests earlier and more often to find problems sooner in the development cycle.| [Overview](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=started-overview-devops-test-integrations-apis) |
 | DevOps Test Performance | Test Performance is a scripting-free environment for automating load and scalability testing of web, ERP, and server-based software applications. Test Performance provides rich and customizable reporting to help you identify the presence and cause of system bottlenecks. It captures the network traffic that is rendered when the application under test interacts with a server. This network traffic is then emulated on multiple virtual users while you play back the test. | [Overview](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=started-devops-test-performance-overview) |
 
-## Why integrate IBM DevOps Test Automation with IBM Enterprise Test Management
+## Why integrate IBM DevOps Test Automation with IBM Engineering Test Management
 
 
-## In this workbook, you will learn how to:
-### 1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test
-### 2. Add and automated test script to ETM and link to the DevOps Test script
-### 3. Execute the test from ETM and observe the DevOps Test autoamted test playback
-### 4. Review the test execution results returned to ETM from DevOps Test
+**In this workbook, you will learn how to:**
+1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test
+2. Add and automated test script to ETM and link to the DevOps Test script
+3. Execute the test from ETM and observe the DevOps Test autoamted test playback
+4. Review the test execution results returned to ETM from DevOps Test
