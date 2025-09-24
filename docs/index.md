@@ -2,7 +2,8 @@
 
 ### About this integrated IBM Testing Solution
 
-**IBM Engineering Test Management Overview**</br>
+**IBM Engineering Test Management Overview**
+
 | **Product Name** | <div style="width:250px">**Description**</div> | **Additional Information** |
 |:-------------:|:------------- |:------------- |
 | Engineering Test Management | ETM is a collaborative, web-based tool for planning, constructing, managing, and executing tests throughout the development lifecycle for test teams of all sizes. To learn more about Engineering Test Management | [Overview](https://www.ibm.com/docs/en/engineering-lifecycle-management-suite/test-management/7.1.0?topic=overview-engineering-test-management) |
@@ -17,7 +18,8 @@
 | DevOps Test Performance | Test Performance is a scripting-free environment for automating load and scalability testing of web, ERP, and server-based software applications. Test Performance provides rich and customizable reporting to help you identify the presence and cause of system bottlenecks. It captures the network traffic that is rendered when the application under test interacts with a server. This network traffic is then emulated on multiple virtual users while you play back the test. | [Overview](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=started-devops-test-performance-overview) |
 
 ### Why integrate IBM DevOps Test Automation with IBM Engineering Test Management
-While test automation is not a "silver bullet" replacement all manual testing and is often misused as a means or reason to reduce the size of test teams, test automation does provide organizations with many benefits, including:</br>
+While test automation is not a "silver bullet" replacement all manual testing and is often misused as a means or reason to reduce the size of test teams, test automation does provide organizations with many benefits, including:
+
 | **Value Proposition** | **Explaination** |
 |:-------------:|:------------- |
 | Saving organizations time and money | While not all tests should be automated or can be automated, automated testing reduces the cost of testing by reducing the expensive of manual effort for those tests which are candidates for test automation. |
@@ -33,6 +35,6 @@ To learn more about test automation with DevOps Test visit [IBM's DevOps Test do
 
 **In this workbook, you will learn how to:**</br>
 1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test
-2. Add and automated test script to ETM and link to the DevOps Test script
-3. Execute the test from ETM and observe the DevOps Test autoamted test playback
-4. Review the test execution results returned to ETM from DevOps Test
+2. Add a test script to an ETM test case and link to the DevOps Test script for test execution
+3. Execute the test by ETM running the test case and observing the DevOps Test autoamted test playback
+4. Review the test execution verdict and result file returned to ETM from DevOps Test solution
