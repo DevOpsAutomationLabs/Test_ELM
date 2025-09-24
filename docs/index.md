@@ -15,11 +15,21 @@ Engineering Test Management is a collaborative, web-based tool for planning, con
 | DevOps Test Performance | Test Performance is a scripting-free environment for automating load and scalability testing of web, ERP, and server-based software applications. Test Performance provides rich and customizable reporting to help you identify the presence and cause of system bottlenecks. It captures the network traffic that is rendered when the application under test interacts with a server. This network traffic is then emulated on multiple virtual users while you play back the test. | [Overview](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=started-devops-test-performance-overview) |
 
 ### Why integrate IBM DevOps Test Automation with IBM Engineering Test Management
+While test automation is not a "silver bullet" and is often misused as a means or reason to reduce the size of test teams, test automation does provide organizations with numerous benefits. Automating tests can:</br>
+| **Value Proposition**  | **Explaination** |
+|:-------------:|:------------- |
+| Save organizations time and money | |
+| Help test increase test coverage | |
+| Improve testing accuracy | |
+| Expand test capability | |
+| Accelerate feeback on software quality | |
+| Improve team morale | |
+
 
 ### About this workbook
-This workbook is limited to sharing details for how engineering teams can connect automated test scripts (authored in one of the many DevOps Test solutions) with test cases (managed in Engineering Test Management) for the purpose of automating test execution and delivering feedback on software quality to developers faster. Because the scope of the test management and test automation disciplines is so large:</br> 
-To learn more about test management in ETM visit[](). </br>
-To learn more about test automation with DevOps Test visit [](). </br>
+This workbook is limited to sharing details for how engineering teams can connect automated test scripts (authored in one of the many DevOps Test solutions) with test cases (managed in Engineering Test Management) for the purpose of automating test execution and delivering feedback on software quality to developers faster. If you are interested in learning more about test management and test automation capabilities offered by IBM Software:</br> 
+To learn more about test management in ETM visit[IBM's ETM documentation webpage.](https://www.ibm.com/docs/en/engineering-lifecycle-management-suite/test-management/7.1.0?topic=overview-engineering-test-management). </br>
+To learn more about test automation with DevOps Test visit [IBM's DevOps Test documentation webpage](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6). </br>
 
 **In this workbook, you will learn how to:**</br>
 1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test
