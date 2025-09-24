@@ -56,17 +56,17 @@ To learn more about test management capabilities offered by IBM visit [IBM's ETM
 To learn more about test automation capabilities offered by IBM visit [IBM's DevOps Test documentation webpage](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6). </br>
 
 **In this workbook, you will learn how to:**</br>
-1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test
-2. Add a test script to an ETM test case and link to the DevOps Test script for test execution
-3. Execute the test by ETM running the test case and observing the DevOps Test autoamted test playback
-4. Review the test execution verdict and result file returned to ETM from DevOps Test solution
+1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test.</br>
+2. Add a test script to an ETM test case and link to the DevOps Test script for test execution.</br>
+3. Execute the test by ETM running the test case and observing the DevOps Test autoamted test playback.</br>
+4. Review the test execution verdict and result file returned to ETM from DevOps Test solution.</br>
 
 ### 1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test ###
-THere are 3 adapters available to execute automated tests to test cases managed in ETM. Which adapter to use depends on the test automation solution the automated test scripts were authored with.
+There are 3 adapters available to execute automated tests to test cases managed in ETM. Which adapter to use depends on the test automation solution the automated test scripts were authored with.
 
 **Configuring the DevOps Test Hub adapter**
 
-The Test Hub us used to create a connection between DevOps Test Hub and ETM. As this learning environment does not have a Test Hub instance installed and running, this section is purely informational.
+The Test Hub adapter is used to create a connection between DevOps Test Hub and ETM. As this learning environment does not have a Test Hub instance installed and running, this section is purely informational.
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
