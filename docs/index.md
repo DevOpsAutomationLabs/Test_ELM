@@ -1,8 +1,8 @@
-# Integrate DevOps Test with Engineering Test Management (ETM) to accelerate the test cycle automating test execution.
+# Connect DevOps Test with Engineering Test Management (ETM) to accelerate the test cycle automating test execution.
 
 ### About this integrated IBM Testing Solution
 
-**IBM Engineering Test Management Overview**
+**IBM Engineering Test Management Overview**</br>
 Engineering Test Management is a collaborative, web-based tool for planning, constructing, managing, and executing tests throughout the development lifecycle for test teams of all sizes. To learn more about Engineering Test Management [click here](https://www.ibm.com/docs/en/engineering-lifecycle-management-suite/test-management/7.1.0?topic=overview-engineering-test-management).
 
 **IBM DevOps Test Automation Overview**
@@ -17,8 +17,11 @@ Engineering Test Management is a collaborative, web-based tool for planning, con
 ### Why integrate IBM DevOps Test Automation with IBM Engineering Test Management
 
 ### About this workbook
+This workbook is limited to sharing details for how engineering teams can connect automated test scripts (authored in one of the many DevOps Test solutions) with test cases (managed in Engineering Test Management) for the purpose of automating test execution and delivering feedback on software quality to developers faster. Because the scope of the test planning and test automation disciplines is so large:</br> 
+To learn more about test planning in ETM visit[](). </br>
+To learn more about test automation with DevOps Test visit [](). </br>
 
-**In this workbook, you will learn how to:**
+**In this workbook, you will learn how to:**</br>
 1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test
 2. Add and automated test script to ETM and link to the DevOps Test script
 3. Execute the test from ETM and observe the DevOps Test autoamted test playback
