@@ -28,8 +28,30 @@ While test automation is not a "silver bullet" replacement for all manual testin
 | Accelerating feeback on software quality | As automated testing is faster, can be run as part of a deployment process, and consistently executes to verify software quality, the results of those test executions can be immediately shared directly back to the development team providing continuous feedback on software quality. |
 | Improving team morale | By allowing Testers to focus on improving the testing practice and providing Developers accelerated feedback on the sofware they are developing can only lead to improved morale. |
 
+## About the learning environment
+**ETM Setup:**
+In order to share details and learn hands on about how to configure and exercise the connection between ETM and DevOps Test UI, the JKE Banking (Quality Management) project was added to ELM as part of installing the Money that Matters sample application. In addition, to enable the Test Hub adapter in ETM, the DevOps Test Hub adapter files have been downloaded and installed in the RHEL VMWare image. For details on how to install the DevOps Test Hub adapter files in ETM, refer to the instructions available at the following URL : [https://www.ibm.com/docs/en/devops-test-hub/11.0.6?topic=management-adding-adapter-files-engineering-test](https://www.ibm.com/docs/en/devops-test-hub/11.0.6?topic=management-adding-adapter-files-engineering-test)
+
+**DevOps Test UI Setup:**
+As the scope of this exercise is to share details on how to integrate DevOps Test with ETM and not provide details on how to record and modify an automated test script, a Test UI project has been already created and an automated test script recorded. Details of the test script are a follows:
+1. Launches the application under test in a browser.
+2. Modifies several field on the UI to submit a donation to the charity of choosing.
+3. Posts the donation.
+4. Verifies the donation has been successfully submited.
+5. Browser closes/ test ends.
+
+**Application Under Test Setup:**
+The "JKE Banking - Donations" demo application being subjected to test automation is a simple html file containing javascript. It is deployed as a docker container running on an nginx server to host the index.html file on port 81 (http://127.0.0.1:81) and start during boot of the RHEL OS.
+
+**Chrome/Firefox Browser Setup:**
+Both browser applications have bookmarks available to access the Workbook, the ELM instance, and JKE Banking - Donations demo application.
+
 ## About this workbook
-The scope of this workbook is to share details on how engineering teams can connect automated test scripts (authored in one of the many DevOps Test solutions) with test cases (managed in Engineering Test Management) for the purpose of automating test execution and delivering feedback on software quality to developers faster. If you are interested in learning more about specific test management and/or test automation capabilities offered by IBM Software:</br> 
+The scope of this workbook is to share details on how engineering teams can connect automated test scripts (authored in one of the many DevOps Test solutions) with test cases (managed in Engineering Test Management) for the purpose of automating test execution and delivering feedback on software quality to developers faster. And while the demo guide will share details on how to configure all the different adapter options, this exercise will focus on the end to end story involving DevOps Test UI and ETM as once an adapter is configured, the process of adding a test script to an ETM test case is the same. 
+
+What this exercise does not cover is how to author automated tests in any of the DevOps Test Automation solutions or how to perform test management in ETM.
+
+If you are interested in learning more about specific test management and/or test automation capabilities offered by IBM Software:</br> 
 To learn more about test management capabilities offered by IBM visit [IBM's ETM documentation webpage.](https://www.ibm.com/docs/en/engineering-lifecycle-management-suite/test-management/7.1.0?topic=overview-engineering-test-management). </br>
 To learn more about test automation capabilities offered by IBM visit [IBM's DevOps Test documentation webpage](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6). </br>
 
@@ -45,8 +67,18 @@ THere are 3 adapters available to execute automated tests to test cases managed 
 
 **Configuring the DevOps Test Hub adapter**
 **Configuring the Test UI adapter**
+
+The Test UI adapter is used to create a connection between the functional testing perspective in DevOps Test UI (formerly Rational Functional Tester) with ETM. While you will not be executing a functional test script, this section of the workbook shares details on how to configure the adapter, start the adapter, and confirm that the adapter is available in ETM.
+
+| **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
+|:-------------:|:------------- |:------------- |
+
 **Configuring the Test Workbench adapter**
 
+The Test Workbench adapter is used to create a connection between the Test UI and Performance testing perspectives in DevOps Test UI with ETM. This section of the workbook shares details on how to configure the adapter, start the adapter, and confirm that the adapter is available in ETM.
+
+| **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
+|:-------------:|:------------- |:------------- |
 
 ### 2. Add a test script to an ETM test case and link to the DevOps Test script for test execution ###
 
