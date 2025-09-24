@@ -3,7 +3,9 @@
 ### About this integrated IBM Testing Solution
 
 **IBM Engineering Test Management Overview**</br>
-Engineering Test Management is a collaborative, web-based tool for planning, constructing, managing, and executing tests throughout the development lifecycle for test teams of all sizes. To learn more about Engineering Test Management [click here](https://www.ibm.com/docs/en/engineering-lifecycle-management-suite/test-management/7.1.0?topic=overview-engineering-test-management).
+| **Product Name** | <div style="width:250px">**Description**</div>  | **Additional Information** |
+|:-------------:|:------------- |:------------- |
+| Engineering Test Management | ETM is a collaborative, web-based tool for planning, constructing, managing, and executing tests throughout the development lifecycle for test teams of all sizes. To learn more about Engineering Test Management | [Overview](https://www.ibm.com/docs/en/engineering-lifecycle-management-suite/test-management/7.1.0?topic=overview-engineering-test-management) |
 
 **IBM DevOps Test Automation Overview**
 
@@ -16,14 +18,13 @@ Engineering Test Management is a collaborative, web-based tool for planning, con
 
 ### Why integrate IBM DevOps Test Automation with IBM Engineering Test Management
 While test automation is not a "silver bullet" replacement all manual testing and is often misused as a means or reason to reduce the size of test teams, test automation does provide organizations with many benefits, including:</br>
-| **Value Proposition**  | **Explaination** |
+| **Value Proposition** | **Explaination** |
 |:-------------:|:------------- |
-| Saving organizations time and money | |
-| Helping test increase test coverage | |
-| Improving testing accuracy | |
-| Expanding test capability | |
-| Accelerating feeback on software quality | |
-| Improving team morale | |
+| Saving organizations time and money | While not all tests should be automated or can be automated, automated testing reduces the cost of testing by reducing the expensive of manual effort for those tests which are candidates for test automation. |
+| Helping test increase test coverage | Freeing testers from having to execute test scripts manually allows them to focus on improving the overall test effort. |
+| Improving testing accuracy | Let's face it, people make mistakes. Where automated testing is software designed to repeat a series of steps against the application under test over and over. |
+| Accelerating feeback on software quality | As automated testing is faster, can be run as part of a deployment process, and consistently executes to verify software quality, the results of those test executions can be shared directly back to the development team providing continuous feedback on software quality. |
+| Improving team morale | By allowing Testers to focus on improving the testing practice and providing Developers accelerated feedback on the sofware they are developing can only lead to improved morale. |
 
 ### About this workbook
 This workbook is limited to sharing details for how engineering teams can connect automated test scripts (authored in one of the many DevOps Test solutions) with test cases (managed in Engineering Test Management) for the purpose of automating test execution and delivering feedback on software quality to developers faster. If you are interested in learning more about test management and test automation capabilities offered by IBM Software:</br> 
