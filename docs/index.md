@@ -58,11 +58,11 @@ To learn more about test automation capabilities offered by IBM visit [IBM's Dev
 **In this workbook, you will learn how to:**</br>
 1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test.</br>
 2. Add a test script to an ETM test case and link to the DevOps Test script for test execution.</br>
-3. Execute the test by ETM running the test case and observing the DevOps Test autoamted test playback.</br>
-4. Review the test execution verdict and result file returned to ETM from DevOps Test solution.</br>
+3. Execute the test from ETM by running the test case and observing the DevOps Test autoamted test playback against the application under test.</br>
+4. Review the test execution verdict and result file(s) returned to ETM from DevOps Test solution.</br>
 
 ### 1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test ###
-There are 3 adapters available to execute automated tests to test cases managed in ETM. Which adapter to use depends on the test automation solution the automated test scripts were authored with.
+There are 3 adapters available to execute automated tests linked to test cases managed in ETM. Which adapter to use depends on the test automation solution the automated test scripts were authored with.
 
 **Configuring the DevOps Test Hub adapter**
 
@@ -70,7 +70,15 @@ The Test Hub adapter is used to create a connection between DevOps Test Hub and 
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
-| 1 | blah | image link |
+| 1 | Log in to Test Hub | <img src="media/t1_1.png" alt="t1_1" style="width:75%; height:auto;"> |
+| 2 | Open the JKE Banking project | <img src="media/t1_2.png" alt="t1_2" style="width:75%; height:auto;"> |
+| 3 | Click **Manage>Integrations** | <img src="media/t1_3.png" alt="t1_3" style="width:75%; height:auto;"> |
+| 4 | On the Integrations page, Click **Add IBM ETM Adapter** within the IBM Engineering Test Management (ETM) section | <img src="media/t1_4.png" alt="t1_4" style="width:75%; height:auto;"> |
+| 5 | Enter the ETM server URL, user name, and password | <img src="media/t1_5.png" alt="t1_5" style="width:75%; height:auto;"> |
+| 6 | Click **Validate** | <img src="media/t1_6.png" alt="t1_6" style="width:75%; height:auto;"> |
+| 7 | Select **JKE Banking (Quality Management)** from the Project area list| <img src="media/t1_7.png" alt="t1_7" style="width:75%; height:auto;"> |
+| 8 | Provide a meaningful name for the adapter to be displayed in ETM on the adapter console | <img src="media/t1_8.png" alt="t1_8" style="width:75%; height:auto;"> |
+| 1 | Click **Save** | <img src="media/t1_9.png" alt="t1_9" style="width:75%; height:auto;"> |
 
 **Configuring the Test UI adapter**
 
