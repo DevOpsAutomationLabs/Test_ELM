@@ -29,9 +29,12 @@ While test automation is not a "silver bullet" replacement for all manual testin
 | Improving team morale | By allowing Testers to focus on improving the testing practice and providing Developers accelerated feedback on the sofware they are developing can only lead to improved morale. |
 
 ## About this workbook
-The scope of this workbook is to share details on how engineering teams can connect automated test scripts (authored in one of the many DevOps Test solutions) with test cases (managed in Engineering Test Management) for the purpose of automating test execution and delivering feedback on software quality to developers faster. If you are interested in learning more about specific test management and/or test automation capabilities offered by IBM Software:</br> 
+The scope of this workbook is to share details on how engineering teams can connect automated test scripts (authored in one of the many DevOps Test solutions) with test cases (managed in Engineering Test Management) for the purpose of automating test execution and delivering feedback on software quality to developers faster. And while the demo guide will share details on how to configure all the different adapter options, this exercise will focus on the end to end story involving DevOps Test UI and ETM as once an adapter is configured, the process of adding a test script to an ETM test case is the same. 
+
+If you are interested in learning more about specific test management and/or test automation capabilities offered by IBM Software:</br> 
 To learn more about test management capabilities offered by IBM visit [IBM's ETM documentation webpage.](https://www.ibm.com/docs/en/engineering-lifecycle-management-suite/test-management/7.1.0?topic=overview-engineering-test-management). </br>
 To learn more about test automation capabilities offered by IBM visit [IBM's DevOps Test documentation webpage](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6). </br>
+
 
 **In this workbook, you will learn how to:**</br>
 1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test
