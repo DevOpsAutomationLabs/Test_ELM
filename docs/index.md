@@ -82,7 +82,7 @@ The Test Hub adapter is used to create a connection between DevOps Test Hub and 
 
 **Configuring the Test UI adapter**
 
-The Test UI adapter is used to create a connection between the **Functional testing** perspective in DevOps Test UI (formerly Rational Functional Tester) with ETM. While you will not be executing a functional test script, this section of the workbook shares details on how to configure the adapter, start the adapter, and confirm that the adapter is available in ETM.
+The Test UI adapter is used to create a connection between the **Functional** testing perspective in DevOps Test UI (formerly Rational Functional Tester) with ETM. While you will not be executing a functional test script, this section of the workbook shares details on how to configure the adapter, start the adapter, and confirm that the adapter is available in ETM.
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
@@ -92,7 +92,9 @@ The Test UI adapter is used to create a connection between the **Functional test
 | 4 | In the DevOpsTest UI Adapter user interface, enter the appropriate information for your ETM installation. For the purposes of this exercise, the following was used to establish a connection with ETM.</br></br>**Server URL:** https://ibmjazz.net:9443/qm</br>**Authentication Type:** Username and Password</br>**User ID:** sysadmin</br>**Password:** Passw0rd</br>**Project area:**  JKEBanking (Quality Management) - selected from the picklist</br>**Adapter Name:** DTUI Adapter on rhserver | <img src="media/t1_13.png" alt="t1_13" style="width:100%; height:auto;"> |
 | 5 | Click **Start Adapter**. | <img src="media/t1_14.png" alt="t1_14" style="width:100%; height:auto;"> |
 | 6 | Click the **Adapter Console** tab to confirm a connection was made to ETM. | <img src="media/t1_15.png" alt="t1_15" style="width:100%; height:auto;"> |
-| 7 | Launch a BrowserClick the **Adapter Console** tab to confirm a connection was made to ETM. | <img src="media/t1_15.png" alt="t1_15" style="width:100%; height:auto;"> |
+| 7 | Launch a Browser and navigate to the JKE Banking (Quality Management) project in ETM.</br></br>**User ID:** sysadmin</br>**Password:** passw0rd | <img src="media/t1_16.png" alt="t1_16" style="width:100%; height:auto;"> |
+| 8 | From the JKE Banking (Quality Management) project area, click **Execution** and select **Adaptor Console** from the list of options | <img src="media/t1_17.png" alt="t1_17" style="width:60%; height:auto;"> |
+| 9 | Confirm that that DTUI Adapter on rhserver is listed and showing as Healthy | <img src="media/t1_18.png" alt="t1_18" style="width:75%; height:auto;"> |
 
 **Configuring the Test Workbench adapter**
 
