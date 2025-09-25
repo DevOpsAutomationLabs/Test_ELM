@@ -74,7 +74,7 @@ The Test Hub adapter is used to create a connection between DevOps Test Hub and 
 | 2 | Open the Test Project (e.g. JKEBanking) by clicking on the tile. | <img src="media/t1_2.png" alt="t1_2" style="width:75%; height:auto;"> |
 | 3 | Click **Manage > Integration** from the left-hand navigation bar. | <img src="media/t1_3.png" alt="t1_3" style="width:40%; height:auto;"> |
 | 4 | On the Integrations page, Click **Add IBM ETM Adapter** within the IBM Engineering Test Management (ETM) section. | <img src="media/t1_4.png" alt="t1_4" style="width:100%; height:auto;"> |
-| 5 | Enter the **ETM server URL**, **user name**, and **password**. | <img src="media/t1_5.png" alt="t1_5" style="width:75%; height:auto;"> |
+| 5 | Enter the **ETM server URL**, **user name**, and **password**.</br>For the purpose of this exercise the following values were used:</br></br>**Server URL:** https://ibmjazz.net:9443</br>**Username:** sysadmin</br>**Password:** Passw0rd | <img src="media/t1_5.png" alt="t1_5" style="width:75%; height:auto;"> |
 | 6 | Click **Validate**. | <img src="media/t1_6.png" alt="t1_6" style="width:75%; height:auto;"> |
 | 7 | Select **JKE Banking (Quality Management)** from the Project area list. | <img src="media/t1_7.png" alt="t1_7" style="width:50%; height:auto;"> |
 | 8 | Provide a meaningful name for the adapter to be displayed in ETM on the adapter console. | <img src="media/t1_8.png" alt="t1_8" style="width:50%; height:auto;"> |
@@ -87,9 +87,9 @@ The Test UI adapter is used to create a connection between the **Functional test
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
 | 1 | Open a terminal session.  | <img src="media/t1_11.png" alt="t1_11" style="width:75%; height:auto;"> |
-| 2 | Navigate to the following folder within the DevOpsTest installation location: </br> <TestUI installation directory>/FuncationalTester/RQMAdapter/ </br> For this exercise, the installation folder is "/opt/IBM/DevOpsTest"  | <img src="media/t1_11.png" alt="t1_11" style="width:75%; height:auto;"> |
-| 3 | As the superuser, execute the following command: </br> sudo ./configureadapter</br> sudo password is "Passw0rd" (Passw+zero+rd) | <img src="media/t1_12.png" alt="t1_12" style="width:75%; height:auto;"> |
-| 4 | In the DevOpsTest UI Adapter user interface, enter the appropriate information for your ETM installation. For the purposes of this exercise, the following was used to establish a connection with ETM.</br>**Server URL:** https://ibmjazz.net:9443/qm</br>**Authentication Type:** Username and Password</br>**User ID:** sysadmin</br>**Password:** Passw0rd</br>**Project area:**  JKEBanking (Quality Management) - selected from the picklist</br>**Adapter Name:** DTUI Adapter on rhserver | <img src="media/t1_13.png" alt="t1_13" style="width:75%; height:auto;"> |
+| 2 | Navigate to the following folder within the DevOpsTest installation location: </br>*TestUI installation directory*/FunctionalTester/RQMAdapter/ </br> For this exercise, the installation folder is "/opt/IBM/DevOpsTest"</br></br>/cd /opt/IBM/DevOpsTest/FunctionalTester/RQMAdapter | <img src="media/t1_11.png" alt="t1_11" style="width:75%; height:auto;"> |
+| 3 | As the superuser, execute the following command: </br> sudo ./configureadapter</br><br>*sudo password is "Passw0rd" (Passw+zero+rd)* | <img src="media/t1_12.png" alt="t1_12" style="width:75%; height:auto;"> |
+| 4 | In the DevOpsTest UI Adapter user interface, enter the appropriate information for your ETM installation. For the purposes of this exercise, the following was used to establish a connection with ETM.</br></br>**Server URL:** https://ibmjazz.net:9443/qm</br>**Authentication Type:** Username and Password</br>**User ID:** sysadmin</br>**Password:** Passw0rd</br>**Project area:**  JKEBanking (Quality Management) - selected from the picklist</br>**Adapter Name:** DTUI Adapter on rhserver | <img src="media/t1_13.png" alt="t1_13" style="width:75%; height:auto;"> |
 
 **Configuring the Test Workbench adapter**
 
