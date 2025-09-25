@@ -107,6 +107,11 @@ The Test Workbench adapter is used to create a connection between the **Test UI*
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
 | 1 | From the RHEL desktop, click **Applications > DevOps Test > DevOps Test UI** to launch the testing application. | <img src="media/t1_21.png" alt="t1_21" style="width:100%; height:auto;"> |
+| 2 | Specify the Workspace and click **Launch**.</br></br>For this exercise leave the workspace as is. | <img src="media/t1_22.png" alt="t1_22" style="width:100%; height:auto;"> |
+| 3 | After DevOps Test UI has opened, click **Window** on the toolbar and select **Preferences** from the options presented. | <img src="media/t1_23.png" alt="t1_23" style="width:100%; height:auto;"> |
+| 4 | On the Preferences window, select **Engineering Test Management**. | <img src="media/t1_24.png" alt="t1_24" style="width:100%; height:auto;"> |
+| 5 | Enter your Server URL, Adapter Name, Project area, User ID and Password details on the Engineering Test Management Adapter window.</br></br>For the purposes of this exercise the following values were used:</br></br>**Server URL:** https://ibmjazz.net</br>**Adapter name:** DevOpsTest</br>**Project area:** JKE Banking (Quality Management)</br>**Authentication Type:** Username and Password</br>**User ID:** sysadmin</br>**Password:** passw0rd</br></br>Click **Apply and Close** when done. | <img src="media/t1_24.png" alt="t1_24" style="width:100%; height:auto;"> |
+| **NOTE:** | When configuring this adapter, the Project area is not selected from a picklist. You must manually enter the Project area name exactly as it appears in ETM.|  |
 
 ### 2. Add a test script to an ETM test case and link to the DevOps Test script for test execution ###
 
