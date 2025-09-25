@@ -98,7 +98,7 @@ The Test UI adapter is used to create a connection between the **Functional** te
 | 8 | From the JKE Banking (Quality Management) project area, click **Execution** and select **Adaptor Console** from the list of options | <img src="media/t1_17.png" alt="t1_17" style="width:100%; height:auto;"> |
 | 9 | Confirm that the **DTUI Adapter on rhserver** is listed and showing as **Healthy** | <img src="media/t1_18.png" alt="t1_18" style="width:100%; height:auto;"> |
 | 10 | Return to the DevOps Test UI Adapter window on the Desktop, click **Stop adapter**, and close the adapter and terminal windows. | <img src="media/t1_19.png" alt="t1_19" style="width:100%; height:auto;"> |
-| **NOTE:** | The test adapter configuration settings persist. Meaning, to start the adapter in the future, navigate to to the adapter installation folder and run **sudo ./startadater** instead of configure adapter.| <img src="media/t1_20.png" alt="t1_20" style="width:100%; height:auto;"> |
+| **NOTE:** | The test adapter configuration settings persist. Meaning, to start the adapter in the future, navigate to to the adapter installation folder and run</br></br> **sudo ./startadater**</br></br>instead of ./configureadapter.| <img src="media/t1_20.png" alt="t1_20" style="width:100%; height:auto;"> |
 
 **1-3 Configuring the Test Workbench adapter**
 
@@ -106,7 +106,7 @@ The Test Workbench adapter is used to create a connection between the **Test UI*
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
-| 1 | From the RHEL desktop, click **Applications > DevOps Test > DevOps Test UI** to launch the application. | <img src="media/t1_20.png" alt="t1_20" style="width:100%; height:auto;"> |
+| 1 | From the RHEL desktop, click **Applications > DevOps Test > DevOps Test UI** to launch the testing application. | <img src="media/t1_21.png" alt="t1_21" style="width:100%; height:auto;"> |
 
 ### 2. Add a test script to an ETM test case and link to the DevOps Test script for test execution ###
 
