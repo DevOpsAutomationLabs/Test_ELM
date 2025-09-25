@@ -86,10 +86,13 @@ The Test UI adapter is used to create a connection between the **Functional test
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
-| 1 | Open a terminal session.  | <img src="media/t1_11.png" alt="t1_11" style="width:75%; height:auto;"> |
-| 2 | Navigate to the following folder within the DevOpsTest installation location: </br>*TestUI installation directory*/FunctionalTester/RQMAdapter/ </br> For this exercise, the installation folder is "/opt/IBM/DevOpsTest"</br></br>/cd /opt/IBM/DevOpsTest/FunctionalTester/RQMAdapter | <img src="media/t1_11.png" alt="t1_11" style="width:75%; height:auto;"> |
-| 3 | As the superuser, execute the following command: </br> sudo ./configureadapter</br><br>*sudo password is "Passw0rd" (Passw+zero+rd)* | <img src="media/t1_12.png" alt="t1_12" style="width:75%; height:auto;"> |
-| 4 | In the DevOpsTest UI Adapter user interface, enter the appropriate information for your ETM installation. For the purposes of this exercise, the following was used to establish a connection with ETM.</br></br>**Server URL:** https://ibmjazz.net:9443/qm</br>**Authentication Type:** Username and Password</br>**User ID:** sysadmin</br>**Password:** Passw0rd</br>**Project area:**  JKEBanking (Quality Management) - selected from the picklist</br>**Adapter Name:** DTUI Adapter on rhserver | <img src="media/t1_13.png" alt="t1_13" style="width:75%; height:auto;"> |
+| 1 | Open a terminal session.  | <img src="media/t1_11.png" alt="t1_11" style="width:100%; height:auto;"> |
+| 2 | Navigate to the following folder within the DevOpsTest installation location: </br>*TestUI installation directory*/FunctionalTester/RQMAdapter/ </br> For this exercise, the installation folder is "/opt/IBM/DevOpsTest"</br></br>**/cd /opt/IBM/DevOpsTest/FunctionalTester/RQMAdapter** | <img src="media/t1_11.png" alt="t1_11" style="width:100%; height:auto;"> |
+| 3 | As the superuser, execute the following command: </br> **sudo ./configureadapter**</br><br>*sudo password is "Passw0rd" (Passw+zero+rd)* | <img src="media/t1_12.png" alt="t1_12" style="width:100%; height:auto;"> |
+| 4 | In the DevOpsTest UI Adapter user interface, enter the appropriate information for your ETM installation. For the purposes of this exercise, the following was used to establish a connection with ETM.</br></br>**Server URL:** https://ibmjazz.net:9443/qm</br>**Authentication Type:** Username and Password</br>**User ID:** sysadmin</br>**Password:** Passw0rd</br>**Project area:**  JKEBanking (Quality Management) - selected from the picklist</br>**Adapter Name:** DTUI Adapter on rhserver | <img src="media/t1_13.png" alt="t1_13" style="width:100%; height:auto;"> |
+| 5 | Click **Start Adapter**. | <img src="media/t1_14.png" alt="t1_14" style="width:100%; height:auto;"> |
+| 6 | Click the **Adapter Console** tab to confirm a connection was made to ETM. | <img src="media/t1_15.png" alt="t1_15" style="width:100%; height:auto;"> |
+| 7 | Launch a BrowserClick the **Adapter Console** tab to confirm a connection was made to ETM. | <img src="media/t1_15.png" alt="t1_15" style="width:100%; height:auto;"> |
 
 **Configuring the Test Workbench adapter**
 
