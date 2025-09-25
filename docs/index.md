@@ -131,7 +131,13 @@ Congratulations on successfully configuring the DevOps Test Adapters to ETM for 
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
-| 1 | blah | image link |
+| 1 | Working in the DevOps UI Test application, double click the **Donation** test script if not already open in the Test Editor view.| <img src="media/t1_30.png" alt="t1_30" style="width:100%; height:auto;"> |
+| 2 | In the View panel, click the **SmartShot View** to enable. | <img src="media/t1_31.png" alt="t1_31" style="width:100%; height:auto;"> |
+| 3 | In the Test Contents view, fully expand the **Test Resources** and **Launch application** twistys. | <img src="media/t1_32.png" alt="t1_32" style="width:100%; height:auto;"> |
+| 4 | Under the UI Test entry, click the **RTW_WebUI_Browser_Selection="Chrome"** line. | <img src="media/t1_33.png" alt="t1_33" style="width:100%; height:auto;"> |
+| 5 | In the **Variable Details** view, note that this test is configured to start an instance of Chrome.</br>However, this setting may be changed to start a different browser or the browser setting could be provided through a data source allowing the test to be executed against a variety of browser types. | <img src="media/t1_34.png" alt="t1_34" style="width:100%; height:auto;"> |
+| 6 | Click through the various test script commands listed under Launch application: 127.0.0.1:81 and refer to the SmartShot View seeing how the application is being exercised.</br></br>The first six steps are interacting with the application as a user would - clicking controls and entering data. The seventh step is verifying that the user was able to successfully send a donation of $100 CAD to the United Way organization. | <img src="media/t1_35.png" alt="t1_35" style="width:100%; height:auto;"> |
+| **NOTE:** | This example was a very simple test. However, now that this user story can be verified automatically, it can now be added to the 9: Donors Can Choose to Support an Organization, and repeatedly be executed as part of future test plans. |  | 
 
 ### 3. Add a test script to an ETM test case and link to the DevOps Test script for test execution ###
 
