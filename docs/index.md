@@ -73,9 +73,10 @@ The Test Hub adapter is used to create a connection between DevOps Test Hub and 
 | 1 | Log in to Test Hub. | <img src="media/t1_1.png" alt="t1_1" style="width:75%; height:auto;"> |
 | 2 | Open the Test Project (e.g. JKEBanking) by clicking on the tile. | <img src="media/t1_2.png" alt="t1_2" style="width:75%; height:auto;"> |
 | 3 | Click **Manage > Integration** from the left-hand navigation bar. | <img src="media/t1_3.png" alt="t1_3" style="width:40%; height:auto;"> |
-| 4 | On the Integrations page, Click **Add IBM ETM Adapter** within the IBM Engineering Test Management (ETM) section. | <img src="media/t1_4.png" alt="t1_4" style="width:100%; height:auto;"> |
+| 4 | On the Integration page, click **Add IBM ETM Adapter** within the IBM Engineering Test Management (ETM) section. | <img src="media/t1_4.png" alt="t1_4" style="width:100%; height:auto;"> |
 | 5 | Enter the **ETM server URL**, **user name**, and **password**.</br>For the purpose of this exercise the following values were used:</br></br>**Server URL:** https://ibmjazz.net:9443</br>**Username:** sysadmin</br>**Password:** Passw0rd | <img src="media/t1_5.png" alt="t1_5" style="width:75%; height:auto;"> |
 | 6 | Click **Validate**. | <img src="media/t1_6.png" alt="t1_6" style="width:75%; height:auto;"> |
+| **NOTE:** | The Validate action connects to the ETM instances retrieving the available project areas to populate the Project area picklist. |  |
 | 7 | Select **JKE Banking (Quality Management)** from the Project area list. | <img src="media/t1_7.png" alt="t1_7" style="width:50%; height:auto;"> |
 | 8 | Provide a meaningful name for the adapter to be displayed in ETM on the adapter console. | <img src="media/t1_8.png" alt="t1_8" style="width:50%; height:auto;"> |
 | 9 | Click **Save** when done.| <img src="media/t1_9.png" alt="t1_9" style="width:75%; height:auto;"> |
@@ -90,12 +91,14 @@ The Test UI adapter is used to create a connection between the **Functional** te
 | 2 | Navigate to the following folder within the DevOpsTest installation location: </br>*TestUI installation directory*/FunctionalTester/RQMAdapter/ </br> For this exercise, the installation folder is "/opt/IBM/DevOpsTest"</br></br>**/cd /opt/IBM/DevOpsTest/FunctionalTester/RQMAdapter** | <img src="media/t1_11.png" alt="t1_11" style="width:100%; height:auto;"> |
 | 3 | As the superuser, execute the following command: </br> **sudo ./configureadapter**</br><br>*sudo password is "Passw0rd" (Passw+zero+rd)* | <img src="media/t1_12.png" alt="t1_12" style="width:100%; height:auto;"> |
 | 4 | In the DevOpsTest UI Adapter user interface, enter the appropriate information for your ETM installation. For the purposes of this exercise, the following was used to establish a connection with ETM.</br></br>**Server URL:** https://ibmjazz.net:9443/qm</br>**Authentication Type:** Username and Password</br>**User ID:** sysadmin</br>**Password:** Passw0rd</br>**Project area:**  JKEBanking (Quality Management) - selected from the picklist</br>**Adapter Name:** DTUI Adapter on rhserver | <img src="media/t1_13.png" alt="t1_13" style="width:100%; height:auto;"> |
+| **NOTE:** | The Project area picklist is automatically populated upon supplying the URL, User ID, and Password values.|  |
 | 5 | Click **Start Adapter**. | <img src="media/t1_14.png" alt="t1_14" style="width:100%; height:auto;"> |
 | 6 | Click the **Adapter Console** tab to confirm a connection was made to ETM. | <img src="media/t1_15.png" alt="t1_15" style="width:100%; height:auto;"> |
 | 7 | Launch a Browser and navigate to the JKE Banking (Quality Management) project in ETM.</br></br>**User ID:** sysadmin</br>**Password:** passw0rd | <img src="media/t1_16.png" alt="t1_16" style="width:100%; height:auto;"> |
 | 8 | From the JKE Banking (Quality Management) project area, click **Execution** and select **Adaptor Console** from the list of options | <img src="media/t1_17.png" alt="t1_17" style="width:100%; height:auto;"> |
 | 9 | Confirm that the **DTUI Adapter on rhserver** is listed and showing as **Healthy** | <img src="media/t1_18.png" alt="t1_18" style="width:100%; height:auto;"> |
-| 10 | Return to the DevOps Test UI Adapter window on the Desktop and click **Stop adapter** | <img src="media/t1_19.png" alt="t1_19" style="width:100%; height:auto;"> |
+| 10 | Return to the DevOps Test UI Adapter window on the Desktop, click **Stop adapter**, and close the adapter and terminal windows. | <img src="media/t1_19.png" alt="t1_19" style="width:100%; height:auto;"> |
+| **NOTE:** | The test adapter configuration settings persist. Meaning, to start the adapter in the future, navigate to to the adapter installation folder and run **sudo ./startadater** instead of configure adapter.| <img src="media/t1_20.png" alt="t1_20" style="width:100%; height:auto;"> |
 
 **Configuring the Test Workbench adapter**
 
