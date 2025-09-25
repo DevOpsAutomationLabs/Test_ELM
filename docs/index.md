@@ -64,7 +64,7 @@ To learn more about test automation capabilities offered by IBM visit [IBM's Dev
 ### 1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test ###
 There are 3 adapters available to execute automated tests linked to test cases managed in ETM. Which adapter to use depends on the test automation solution the automated test scripts were authored with.
 
-**Configuring the DevOps Test Hub adapter**
+**1-1 Configuring the DevOps Test Hub adapter**
 
 The Test Hub adapter is used to create a connection between DevOps Test Hub and ETM. As this learning environment does not have a Test Hub instance installed and running, **this section is informational** sharing specifics on how to configure the adapter.
 
@@ -81,7 +81,7 @@ The Test Hub adapter is used to create a connection between DevOps Test Hub and 
 | 8 | Provide a meaningful name for the adapter to be displayed in ETM on the adapter console. | <img src="media/t1_8.png" alt="t1_8" style="width:50%; height:auto;"> |
 | 9 | Click **Save** when done.| <img src="media/t1_9.png" alt="t1_9" style="width:75%; height:auto;"> |
 
-**Configuring the Test UI adapter**
+**1-2 Configuring the Test UI adapter**
 
 The Test UI adapter is used to create a connection between the **Functional** testing perspective in DevOps Test UI (formerly Rational Functional Tester) with ETM. While you will not be executing a functional test script, this section of the workbook shares details on how to configure the adapter, start the adapter, and confirm that the adapter is available in ETM.
 
@@ -100,13 +100,13 @@ The Test UI adapter is used to create a connection between the **Functional** te
 | 10 | Return to the DevOps Test UI Adapter window on the Desktop, click **Stop adapter**, and close the adapter and terminal windows. | <img src="media/t1_19.png" alt="t1_19" style="width:100%; height:auto;"> |
 | **NOTE:** | The test adapter configuration settings persist. Meaning, to start the adapter in the future, navigate to to the adapter installation folder and run **sudo ./startadater** instead of configure adapter.| <img src="media/t1_20.png" alt="t1_20" style="width:100%; height:auto;"> |
 
-**Configuring the Test Workbench adapter**
+**1-3 Configuring the Test Workbench adapter**
 
 The Test Workbench adapter is used to create a connection between the **Test UI** and/or the **Performance** testing perspectives in DevOps Test UI with ETM. This section of the workbook shares details on how to configure the adapter, start the adapter, and confirm that the adapter is available in ETM.
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
-| 1 | blah | image link |
+| 1 | From the RHEL desktop, click **Applications > DevOps Test > DevOps Test UI** to launch the application. | <img src="media/t1_20.png" alt="t1_20" style="width:100%; height:auto;"> |
 
 ### 2. Add a test script to an ETM test case and link to the DevOps Test script for test execution ###
 
