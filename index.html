@@ -334,6 +334,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="About the learning environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#etm-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      ETM Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devops-test-ui-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevOps Test UI Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-under-test-aut-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application Under Test (AUT) Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chromefirefox-browser-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chrome/Firefox Browser Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -496,19 +538,19 @@
 </tbody>
 </table>
 <h2 id="about-the-learning-environment">About the learning environment</h2>
-<p><strong>ETM Setup:</strong>
-In order to share details and experience hands on learning with how to configure and exercise the connection between ETM and DevOps Test UI, the JKE Banking (Quality Management) project was added to ELM as part of installing the Money that Matters sample application. In addition, to enable the Test Hub adapter in ETM, the DevOps Test Hub adapter files have been downloaded and installed ETM. For details on how to install the DevOps Test Hub adapter files in ETM, refer to the instructions available at the following URL : <a href="https://www.ibm.com/docs/en/devops-test-hub/11.0.6?topic=management-adding-adapter-files-engineering-test">https://www.ibm.com/docs/en/devops-test-hub/11.0.6?topic=management-adding-adapter-files-engineering-test</a></p>
-<p><strong>DevOps Test UI Setup:</strong>
-As the scope of this exercise is to share details on how to integrate DevOps Test with ETM and not provide details on how to record and modify an automated test script, a Test UI project has been already created and an automated test script recorded. Details of the test script are a follows:</br>
+<h3 id="etm-setup">ETM Setup</h3>
+<p>In order to share details and experience hands on learning with how to configure and exercise the connection between ETM and DevOps Test UI, the JKE Banking (Quality Management) project was added to ELM as part of installing the Money that Matters sample application. In addition, to enable the Test Hub adapter in ETM, the DevOps Test Hub adapter files have been downloaded and installed ETM. For details on how to install the DevOps Test Hub adapter files in ETM, refer to the instructions available at the following URL : <a href="https://www.ibm.com/docs/en/devops-test-hub/11.0.6?topic=management-adding-adapter-files-engineering-test">https://www.ibm.com/docs/en/devops-test-hub/11.0.6?topic=management-adding-adapter-files-engineering-test</a></p>
+<h3 id="devops-test-ui-setup">DevOps Test UI Setup</h3>
+<p>As the scope of this exercise is to share details on how to integrate DevOps Test with ETM and not provide details on how to record and modify an automated test script, a Test UI project has been already created and an automated test script recorded. Details of the test script are a follows:</br>
 1. Launches the application under test in a browser.</br>
 2. Modifies several field on the UI to submit a donation to the charity of choosing.</br>
 3. Posts the donation.</br>
 4. Verifies the donation has been successfully submited.</br>
 5. Browser closes/ test ends.</br></p>
-<p><strong>Application Under Test (AUT) Setup:</strong>
-The "JKE Banking - Donations" demo application being subjected to test automation is a simple html file containing javascript. It is deployed as a docker container running on an nginx server to host the index.html file on port 81 (http://127.0.0.1:81) and starts up during boot of the RHEL OS.</p>
-<p><strong>Chrome/Firefox Browser Setup:</strong>
-Both browser applications have bookmarks available to conveniently access the Workbook, the ELM instance, and the JKE Banking - Donations demo application.</p>
+<h3 id="application-under-test-aut-setup">Application Under Test (AUT) Setup</h3>
+<p>The "JKE Banking - Donations" demo application being subjected to test automation is a simple html file containing javascript. It is deployed as a docker container running on an nginx server to host the index.html file on port 81 (http://127.0.0.1:81) and starts up during boot of the RHEL OS.</p>
+<h3 id="chromefirefox-browser-setup">Chrome/Firefox Browser Setup</h3>
+<p>Both browser applications have bookmarks available to conveniently access the Workbook, the ELM instance, and the JKE Banking - Donations demo application.</p>
 <h2 id="about-this-workbook">About this workbook</h2>
 <p>The scope of this workbook is to share details on how engineering teams can connect automated test scripts (authored in one of the many DevOps Test solutions) with test cases (managed in Engineering Test Management) for the purpose of automating test execution and delivering feedback on software quality to developers faster. And while the demo guide will share details on how to configure all the different adapter options, this exercise will focus on the end to end story involving DevOps Test UI and ETM as, once an adapter is configured, the process of adding a test script to an ETM test case is the same. </p>
 <p>What this exercise does not cover is how to author automated tests in any of the DevOps Test Automation solutions or how to perform test management in ETM.</p>
