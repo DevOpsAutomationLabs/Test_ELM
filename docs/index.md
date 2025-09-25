@@ -120,20 +120,32 @@ The Test Workbench adapter is used to create a connection between the **Test UI*
 | **NOTE:** | When configuring this particular adapter, the Project area is not selected from a picklist. You must manually enter the Project area name exactly as it appears in ETM.|  |
 | 6 | Locate the Engineering Test Management Adapter panel in the DevOps Test UI application.</br></br>Typically located bottom right in DevOps Test UI.  | <img src="media/t1_26.png" alt="t1_26" style="width:100%; height:auto;"> |
 | **NOTE:** |The Engineering Test Management Adapter panel has been added in advance. But, to add the panel, click **Window > Show View > Engineering Test Management Adapter**  | <img src="media/t1_27.png" alt="t1_27" style="width:100%; height:auto;"> |
+| 7 | Working in the Engineering Test Management panel, activate the connection to ETM. | <img src="media/t1_28.png" alt="t1_28" style="width:100%; height:auto;"> |
+| 8 | Confirm that the adapter successfully connected to ETM. | <img src="media/t1_29.png" alt="t1_29" style="width:100%; height:auto;"> |
 
-### 2. Add a test script to an ETM test case and link to the DevOps Test script for test execution ###
+Congratulations on successfully configuring the DevOps Test Adapters to ETM for test automation.
+
+### 2. Understanding the DevOps Test test script which will be executed from a test case in ETM. ###
+
+<img src="media/t_script.png" alt="t_script" style="width:100%; height:auto;">
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
 | 1 | blah | image link |
 
-### 3. Execute the test by ETM running the test case and observing the DevOps Test autoamted test playback ###
+### 3. Add a test script to an ETM test case and link to the DevOps Test script for test execution ###
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
 | 1 | blah | image link |
 
-### 4. Review the test execution verdict and result file returned to ETM from DevOps Test solution ###
+### 4. Execute the test by ETM running the test case and observing the DevOps Test autoamted test playback ###
+
+| **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
+|:-------------:|:------------- |:------------- |
+| 1 | blah | image link |
+
+### 5. Review the test execution verdict and result file returned to ETM from DevOps Test solution ###
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
