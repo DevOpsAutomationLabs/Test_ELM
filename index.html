@@ -524,7 +524,7 @@ To learn more about test automation capabilities offered by IBM visit <a href="h
 <h3 id="1-configure-test-adapters-creating-a-communication-channel-between-etm-and-devops-test">1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test</h3>
 <p>There are 3 adapters available to execute automated tests linked to test cases managed in ETM. Which adapter to use depends on the test automation solution the automated test scripts were authored with.</p>
 <p><strong>Configuring the DevOps Test Hub adapter</strong></p>
-<p>The Test Hub adapter is used to create a connection between DevOps Test Hub and ETM. As this learning environment does not have a Test Hub instance installed and running, <strong>this section is purely informational</strong>.</p>
+<p>The Test Hub adapter is used to create a connection between DevOps Test Hub and ETM. As this learning environment does not have a Test Hub instance installed and running, <strong>this section is informational</strong> sharing specifics on how to configure the adapter.</p>
 <table>
 <thead>
 <tr>
@@ -546,7 +546,7 @@ To learn more about test automation capabilities offered by IBM visit <a href="h
 </tr>
 <tr>
 <td style="text-align: center;">3</td>
-<td style="text-align: left;">Click <strong>Manage&gt;Integrations</strong> from the left-hand navigation bar.</td>
+<td style="text-align: left;">Click <strong>Manage &gt; Integration</strong> from the left-hand navigation bar.</td>
 <td style="text-align: left;"><img src="media/t1_3.png" alt="t1_3" style="width:40%; height:auto;"></td>
 </tr>
 <tr>
@@ -572,7 +572,7 @@ To learn more about test automation capabilities offered by IBM visit <a href="h
 <tr>
 <td style="text-align: center;">8</td>
 <td style="text-align: left;">Provide a meaningful name for the adapter to be displayed in ETM on the adapter console.</td>
-<td style="text-align: left;"><img src="media/t1_8.png" alt="t1_8" style="width=25%; height:auto;"></td>
+<td style="text-align: left;"><img src="media/t1_8.png" alt="t1_8" style="width:50%; height:auto;"></td>
 </tr>
 <tr>
 <td style="text-align: center;">9</td>
@@ -582,7 +582,7 @@ To learn more about test automation capabilities offered by IBM visit <a href="h
 </tbody>
 </table>
 <p><strong>Configuring the Test UI adapter</strong></p>
-<p>The Test UI adapter is used to create a connection between the functional testing perspective in DevOps Test UI (formerly Rational Functional Tester) with ETM. While you will not be executing a functional test script, this section of the workbook shares details on how to configure the adapter, start the adapter, and confirm that the adapter is available in ETM.</p>
+<p>The Test UI adapter is used to create a connection between the <strong>Functional testing</strong> perspective in DevOps Test UI (formerly Rational Functional Tester) with ETM. While you will not be executing a functional test script, this section of the workbook shares details on how to configure the adapter, start the adapter, and confirm that the adapter is available in ETM.</p>
 <table>
 <thead>
 <tr>
@@ -594,13 +594,28 @@ To learn more about test automation capabilities offered by IBM visit <a href="h
 <tbody>
 <tr>
 <td style="text-align: center;">1</td>
-<td style="text-align: left;">blah</td>
-<td style="text-align: left;">image link</td>
+<td style="text-align: left;">Open a terminal session.</td>
+<td style="text-align: left;"><img src="media/t1_11.png" alt="t1_11" style="width:75%; height:auto;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Navigate to the following folder within the DevOpsTest installation location: </br> <TestUI installation directory>/FuncationalTester/RQMAdapter/ </br> For this exercise, the installation folder is "/opt/IBM/DevOpsTest"</td>
+<td style="text-align: left;"><img src="media/t1_11.png" alt="t1_11" style="width:75%; height:auto;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">As the superuser, execute the following command: </br> sudo ./configureadapter</br> sudo password is "Passw0rd" (Passw+zero+rd)</td>
+<td style="text-align: left;"><img src="media/t1_12.png" alt="t1_12" style="width:75%; height:auto;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">In the DevOpsTest UI Adapter user interface, enter the appropriate information for your ETM installation. For the purposes of this exercise, the following was used to establish a connection with ETM.</br><strong>Server URL:</strong> https://ibmjazz.net:9443/qm</br><strong>Authentication Type:</strong> Username and Password</br><strong>User ID:</strong> sysadmin</br><strong>Password:</strong> Passw0rd</br><strong>Project area:</strong>  JKEBanking (Quality Management) - selected from the picklist</br><strong>Adapter Name:</strong> DTUI Adapter on rhserver</td>
+<td style="text-align: left;"><img src="media/t1_13.png" alt="t1_13" style="width:75%; height:auto;"></td>
 </tr>
 </tbody>
 </table>
 <p><strong>Configuring the Test Workbench adapter</strong></p>
-<p>The Test Workbench adapter is used to create a connection between the Test UI and Performance testing perspectives in DevOps Test UI with ETM. This section of the workbook shares details on how to configure the adapter, start the adapter, and confirm that the adapter is available in ETM.</p>
+<p>The Test Workbench adapter is used to create a connection between the <strong>Test UI</strong> and/or the <strong>Performance</strong> testing perspectives in DevOps Test UI with ETM. This section of the workbook shares details on how to configure the adapter, start the adapter, and confirm that the adapter is available in ETM.</p>
 <table>
 <thead>
 <tr>
