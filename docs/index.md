@@ -31,10 +31,13 @@ While test automation is not a "silver bullet" replacement for all manual testin
 | Improving team morale | By allowing Testers to focus on improving the testing practice and providing Developers accelerated feedback on the sofware they are developing can only lead to improved morale. |
 
 ## About the learning environment
-**ETM Setup:**
+
+### ETM Setup ###
+
 In order to share details and experience hands on learning with how to configure and exercise the connection between ETM and DevOps Test UI, the JKE Banking (Quality Management) project was added to ELM as part of installing the Money that Matters sample application. In addition, to enable the Test Hub adapter in ETM, the DevOps Test Hub adapter files have been downloaded and installed ETM. For details on how to install the DevOps Test Hub adapter files in ETM, refer to the instructions available at the following URL : [https://www.ibm.com/docs/en/devops-test-hub/11.0.6?topic=management-adding-adapter-files-engineering-test](https://www.ibm.com/docs/en/devops-test-hub/11.0.6?topic=management-adding-adapter-files-engineering-test)
 
-**DevOps Test UI Setup:**
+### DevOps Test UI Setup ###
+
 As the scope of this exercise is to share details on how to integrate DevOps Test with ETM and not provide details on how to record and modify an automated test script, a Test UI project has been already created and an automated test script recorded. Details of the test script are a follows:</br>
 1. Launches the application under test in a browser.</br>
 2. Modifies several field on the UI to submit a donation to the charity of choosing.</br>
@@ -42,10 +45,11 @@ As the scope of this exercise is to share details on how to integrate DevOps Tes
 4. Verifies the donation has been successfully submited.</br>
 5. Browser closes/ test ends.</br>
 
-**Application Under Test (AUT) Setup:**
+### Application Under Test (AUT) Setup ###
+
 The "JKE Banking - Donations" demo application being subjected to test automation is a simple html file containing javascript. It is deployed as a docker container running on an nginx server to host the index.html file on port 81 (http://127.0.0.1:81) and starts up during boot of the RHEL OS.
 
-**Chrome/Firefox Browser Setup:**
+### Chrome/Firefox Browser Setup ###
 Both browser applications have bookmarks available to conveniently access the Workbook, the ELM instance, and the JKE Banking - Donations demo application.
 
 ## About this workbook
