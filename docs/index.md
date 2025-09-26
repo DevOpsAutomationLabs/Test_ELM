@@ -196,6 +196,7 @@ As these remaining two test automation solutions have not been installed/configu
 | 2 | Select Run from the options presented. | <img src="media/t1_57.png" alt="t1_57" style="width:100%; height:auto;"> |
 | 3 | Select the appropriate Test Environment and click **Finish**. | <img src="media/t1_58.png" alt="t1_58" style="width:100%; height:auto;"> |
 | **NOTE:** | When the test script starts to run, it is important to not interfere with the playback. **DO NOT interact with the computer screen**. | <img src="media/t1_59.png" alt="t1_59" style="width:100%; height:auto;"> |
+| 4 | Automated test playback is complete when you see 100% in the Summary panel. | <img src="media/t1_60.png" alt="t1_60" style="width:100%; height:auto;"> |
 
 *Congratulations on successfully executing the DevOps Test UI test script via an ETM test case to quickly verify the associated user story.*
 
