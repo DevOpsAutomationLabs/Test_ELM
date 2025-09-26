@@ -157,6 +157,12 @@ Congratulations on successfully configuring the DevOps Test Adapters for ETM to 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
 | 1 | Working in the JKE Banking (Quality Management) project in ETM, click **Construction** and create a new **Test Script**.  | <img src="media/t1_36.png" alt="t1_36" style="width:100%; height:auto;"> |
+| 2 | Enter a meaningful name for the new test script.</br></br>AT - Donor can choose organization.  | <img src="media/t1_37.png" alt="t1_37" style="width:100%; height:auto;"> |
+| 3 | Click the **Type** dropdownlist box and select **DevOps Test Workbench** from the options presented.  | <img src="media/t1_38.png" alt="t1_38" style="width:100%; height:auto;"> |
+| 4 | Set the test script action as **Ready for review** and assign to **Sally**.  | <img src="media/t1_39.png" alt="t1_39" style="width:100%; height:auto;"> |
+| 5 | In the **Test Workbench script details** section, enable **Use test resources that are local to a test machine** and click **Select Adapter**.  | <img src="media/t1_39.png" alt="t1_39" style="width:100%; height:auto;"> |
+| 5 | In the **Test Workbench script details** section, enable **Use test resources that are local to a test machine**.  | <img src="media/t1_40.png" alt="t1_40" style="width:100%; height:auto;"> |
+
 
 ### 4. Execute the test by ETM running the test case and observing the DevOps Test autoamted test playback ###
 
