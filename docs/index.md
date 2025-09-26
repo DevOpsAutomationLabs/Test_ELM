@@ -175,7 +175,7 @@ As these remaining two test automation solutions have not been installed/configu
 |:-------------:|:------------- |:------------- |
 | 1 | Working in the JKE Banking (Quality Management) project in ETM, click **Construction** and Browse **Test Cases**. | <img src="media/t1_46.png" alt="t1_46" style="width:100%; height:auto;"> |
 | 2 | Open Test Case 9:Donors Can Choose to Support an Organization | <img src="media/t1_47.png" alt="t1_47" style="width:100%; height:auto;"> |
-| **NOTE:** | Remember when reviewing the automated test script steps in DevOps Test UI:</br></br>1. United Way was chosen by the user as the donation recipient.</br>2. The test script playback was in a Chrome browser. |  |
+| **NOTE:** | Remember when reviewing the automated test script steps in DevOps Test UI:</br>1. United Way was chosen by the user as the donation recipient.</br>2. The test script playback was in a Chrome browser. |  |
 | 3 | Working in the Test Case Execution Records view of the Test Case, add a new Test Case Execution Record by clicking the Generate New Test Case Execution Record icon. | <img src="media/t1_48.png" alt="t1_48" style="width:100%; height:auto;"> |
 | 4 | From the list of available Test Environments, select **Chrome_DB2_Tomcat...** and click **Next**. | <img src="media/t1_49.png" alt="t1_49" style="width:100%; height:auto;"> |
 | **NOTE:** | For the purpose of this exercise, you will just reuse an existing environment. However, know that you could Generate a Test Environment as well. |  |
@@ -186,13 +186,14 @@ As these remaining two test automation solutions have not been installed/configu
 | 9 | Select the existing Manual test script and Remove. | <img src="media/t1_54.png" alt="t1_54" style="width:100%; height:auto;"> |
 | 10 | **Save** the Test Case changes. | <img src="media/t1_55.png" alt="t1_55" style="width:100%; height:auto;"> |
 
-*Congratulations on successfully configuring the DevOps Test Adapters for ETM to manage and automate testing.*
+*Congratulations on successfully adding the DevOps Test UI test script to ETM for automated testing.*
 
 ### 4. Execute the test by ETM running the test case and observing the DevOps Test automated test playback ###
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
-| 1 | blah | image link |
+| 1 | Continuing to work in the JKE Banking (Qualtiy Management) project and within the 9:Donors Can Choose to Support and Organization test case, click the Run Test Case icon. | <img src="media/t1_56.png" alt="t1_56" style="width:100%; height:auto;"> |
+| 2 | Select Run from the options presented. | <img src="media/t1_57.png" alt="t1_57" style="width:100%; height:auto;"> |
 
 ### 5. Review the test execution verdict and result file returned to ETM from DevOps Test solution ###
 
