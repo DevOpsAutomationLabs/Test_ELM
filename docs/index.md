@@ -147,16 +147,16 @@ Congratulations on successfully configuring the DevOps Test Adapters for ETM to 
 
 ### 3. Create an ETM test script, import the DevOps Test script, and add to an ETM test case for test execution ###
 
-**NOTE:** Before starting the exercise, be sure to start the DevOps Test UI adapter and confirm its availability on the ETM Adapter Console.</br></br>
-Start adapter in DevOps Test UI</br>
-<img src="media/t_startAdapter.png" alt="t_startAdapter" style="width:100%; height:auto;"></br>
-Verify adapter in ETM Adapter Console</br>
-<img src="media/t_adapterConsole.png" alt="t_adapterConsole" style="width:100%; height:auto;"></br>
+**NOTE:** Before starting the exercise, be sure to start the DevOps Test UI adapter and confirm its availability on the ETM Adapter Console page.</br></br>
+**Start adapter in DevOps Test UI**</br>
+<img src="media/t_startAdapter.png" alt="t_startAdapter" style="width:50%; height:auto;"></br></br>
+**Verify adapter in ETM Adapter Console**</br>
+<img src="media/t_adapterConsole.png" alt="t_adapterConsole" style="width:50%; height:auto;"></br>
 
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
-| 1 |  | image link |
+| 1 | Working in the JKE Banking (Quality Management) project in ETM, click **Construction** and create a new **Test Script**.  | <img src="media/t1_36.png" alt="t1_36" style="width:100%; height:auto;"> |
 
 ### 4. Execute the test by ETM running the test case and observing the DevOps Test autoamted test playback ###
 
