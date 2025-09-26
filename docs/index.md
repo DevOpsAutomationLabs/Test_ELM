@@ -153,6 +153,7 @@ Congratulations on successfully configuring the DevOps Test Adapters for ETM to 
 **Verify adapter in ETM Adapter Console**</br>
 <img src="media/t_adapterConsole.png" alt="t_adapterConsole" style="width:50%; height:auto;"></br>
 
+** 3-1 Create the ETM test script**
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
@@ -162,7 +163,11 @@ Congratulations on successfully configuring the DevOps Test Adapters for ETM to 
 | 4 | Set the test script action as **Ready for review** and assign to **Sally**.  | <img src="media/t1_39.png" alt="t1_39" style="width:100%; height:auto;"> |
 | 5 | In the **Test Workbench script details** section, enable **Use test resources that are local to a test machine** and click **Select Adapter**.  | <img src="media/t1_40.png" alt="t1_40" style="width:100%; height:auto;"> |
 | 6 | Select the test adapter which will be used to access the test script in DevOps Test UI. Click Next.  | <img src="media/t1_41.png" alt="t1_41" style="width:100%; height:auto;"> |
-| 7 | Enter the path to the DevOps Test UI workspace and project area within the workspace.</br></br>**/home/sysadmin/project/workspace/JKE_Banking  | <img src="media/t1_42.png" alt="t1_42" style="width:100%; height:auto;"> |
+| 7 | Enter the path to the DevOps Test UI workspace and project area within the workspace.</br></br>**/home/sysadmin/project/workspace/JKE_Banking**</br></br>Click Go. | <img src="media/t1_42.png" alt="t1_42" style="width:100%; height:auto;"> |
+| **NOTE:** | Clicking Go makes a connection to the DevOps Test UI project area returning a list of availabe test scripts. |  |
+| 8 | Select the test script to be imported from DevOps Test UI and click Finish. | <img src="media/t1_43.png" alt="t1_43" style="width:100%; height:auto;"> |
+| 9 | Save the Test Script in ETM. | <img src="media/t1_44.png" alt="t1_44" style="width:100%; height:auto;"> | 
+| 10 | In the Action field, change the state to Approve and save the change. | <img src="media/t1_45.png" alt="t1_45" style="width:100%; height:auto;"> |
 
 ### 4. Execute the test by ETM running the test case and observing the DevOps Test autoamted test playback ###
 
