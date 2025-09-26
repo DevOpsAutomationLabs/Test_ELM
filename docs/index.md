@@ -157,12 +157,12 @@ Congratulations on successfully configuring the DevOps Test Adapters for ETM to 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
 | 1 | Working in the JKE Banking (Quality Management) project in ETM, click **Construction** and create a new **Test Script**.  | <img src="media/t1_36.png" alt="t1_36" style="width:100%; height:auto;"> |
-| 2 | Enter a meaningful name for the new test script.</br></br>AT - Donor can choose organization.  | <img src="media/t1_37.png" alt="t1_37" style="width:100%; height:auto;"> |
-| 3 | Click the **Type** dropdownlist box and select **DevOps Test Workbench** from the options presented.  | <img src="media/t1_38.png" alt="t1_38" style="width:100%; height:auto;"> |
+| 2 | Enter a meaningful name for the new test script.</br></br>e.g. **AT - Donor can choose organization**.  | <img src="media/t1_37.png" alt="t1_37" style="width:100%; height:auto;"> |
+| 3 | Click the **Type** drop down listbox and select **DevOps Test Workbench** from the options presented.  | <img src="media/t1_38.png" alt="t1_38" style="width:100%; height:auto;"> |
 | 4 | Set the test script action as **Ready for review** and assign to **Sally**.  | <img src="media/t1_39.png" alt="t1_39" style="width:100%; height:auto;"> |
-| 5 | In the **Test Workbench script details** section, enable **Use test resources that are local to a test machine** and click **Select Adapter**.  | <img src="media/t1_39.png" alt="t1_39" style="width:100%; height:auto;"> |
-| 5 | In the **Test Workbench script details** section, enable **Use test resources that are local to a test machine**.  | <img src="media/t1_40.png" alt="t1_40" style="width:100%; height:auto;"> |
-
+| 5 | In the **Test Workbench script details** section, enable **Use test resources that are local to a test machine** and click **Select Adapter**.  | <img src="media/t1_40.png" alt="t1_40" style="width:100%; height:auto;"> |
+| 6 | Select the test adapter which will be used to access the test script in DevOps Test UI. Click Next.  | <img src="media/t1_41.png" alt="t1_41" style="width:100%; height:auto;"> |
+| 7 | Enter the path to the DevOps Test UI workspace and project area within the workspace.</br></br>**/home/sysadmin/project/workspace/JKE_Banking  | <img src="media/t1_42.png" alt="t1_42" style="width:100%; height:auto;"> |
 
 ### 4. Execute the test by ETM running the test case and observing the DevOps Test autoamted test playback ###
 
