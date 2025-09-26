@@ -125,9 +125,9 @@ The Test Workbench adapter is used to create a connection between the **Test UI*
 | 8 | Confirm that the adapter successfully connected to ETM. | <img src="media/t1_29.png" alt="t1_29" style="width:100%; height:auto;"> |
 
 **1-4 Configuring the Test Integrations & APIs and Test Embedded Adapters**
-As these two test automation solutions have not been installed in the RHEL image, for information on how to configure additional adapters, click on the following links:
-[Configure and Run DevOps Test Integrations & APIs adapter](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=integrations-devops-test-apis-engineering-test-management)
-[Configure and Run DevOps Test Embedded adapter](https://www.ibm.com/docs/en/devops-test-embedded/9.0.0?topic=integrating-engineering-test-management-integration)
+As these remaining two test automation solutions have not been installed/configured in the RHEL image, click on the following links to review how to integrate ETM with additional test automation solutions:</br></br>
+[Configure and Run the DevOps Test Integrations & APIs adapter](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=integrations-devops-test-apis-engineering-test-management)</br>
+[Configure and Run the DevOps Test Embedded adapter](https://www.ibm.com/docs/en/devops-test-embedded/9.0.0?topic=integrating-engineering-test-management-integration)</br>
 
 Congratulations on successfully configuring the DevOps Test Adapters for ETM to manage and automate testing.
 
@@ -145,11 +145,18 @@ Congratulations on successfully configuring the DevOps Test Adapters for ETM to 
 | 6 | Click through the various test script commands listed starting from **Launch application: 127.0.0.1:81** and refer to the SmartShot View seeing how the application is being exercised by the test script.</br></br>The first six steps are interacting with the application as a user would - clicking controls and entering data. The seventh step is verifying that the user was able to successfully send a donation of $100 CAD to the United Way organization. | <img src="media/t1_35.png" alt="t1_35" style="width:100%; height:auto;"> |
 | **NOTE:** | This example was a very simple test. However, now that this user story can be verified automatically, it can now be added to Test Case **9: Donors Can Choose to Support an Organization** in ETM, and can repeatedly be executed as part of future ETM test plans. |  | 
 
-### 3. Add a test script to an ETM test case and link to the DevOps Test script for test execution ###
+### 3. Create an ETM test script, import the DevOps Test script, and add to an ETM test case for test execution ###
+
+**NOTE:** Before starting the exercise, be sure to start the DevOps Test UI adapter and confirm its availability on the ETM Adapter Console.</br></br>
+Start adapter in DevOps Test UI</br>
+<img src="media/t_startAdapter.png" alt="t_startAdapter" style="width:100%; height:auto;"></br>
+Verify adapter in ETM Adapter Console</br>
+<img src="media/t_adapterConsole.png" alt="t_adapterConsole" style="width:100%; height:auto;"></br>
+
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
-| 1 | blah | image link |
+| 1 |  | image link |
 
 ### 4. Execute the test by ETM running the test case and observing the DevOps Test autoamted test playback ###
 
