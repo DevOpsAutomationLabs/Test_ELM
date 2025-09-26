@@ -153,7 +153,7 @@ As these remaining two test automation solutions have not been installed/configu
 **Verify adapter in ETM Adapter Console**</br>
 <img src="media/t_adapterConsole.png" alt="t_adapterConsole" style="width:50%; height:auto;"></br>
 
-** 3-1 Create the ETM test script**
+**3-1 Create the ETM test script**
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
@@ -169,7 +169,7 @@ As these remaining two test automation solutions have not been installed/configu
 | 9 | Save the Test Script in ETM. | <img src="media/t1_44.png" alt="t1_44" style="width:100%; height:auto;"> | 
 | 10 | In the Action field, change the state to **Approve** and **save** the change. | <img src="media/t1_45.png" alt="t1_45" style="width:100%; height:auto;"> |
 
-** 3-2 Add new test script to ETM Test Case**
+**3-2 Add new test script to ETM Test Case**
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
@@ -188,7 +188,7 @@ As these remaining two test automation solutions have not been installed/configu
 
 *Congratulations on successfully configuring the DevOps Test Adapters for ETM to manage and automate testing.*
 
-### 4. Execute the test by ETM running the test case and observing the DevOps Test autoamted test playback ###
+### 4. Execute the test by ETM running the test case and observing the DevOps Test automated test playback ###
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
