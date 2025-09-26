@@ -18,6 +18,7 @@
 | DevOps Test UI | Test UI is an object-oriented automated testing tool that tests a wide range of desktop, Web, and mobile applications. Test UI provides automated testing capabilities for functional, regression, GUI, and data-driven testing. | [Overview](https://www.ibm.com/docs/en/SSBLQQ_11.0.6/docs/topics/IntrotoRobotJ.html) |
 | DevOps Test Integrations and APIs | Test Integrations and APIs is an integration testing and virtualization tool that includes capabilities to automate and run tests earlier and more often to find problems sooner in the development cycle.| [Overview](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=started-overview-devops-test-integrations-apis) |
 | DevOps Test Performance | Test Performance is a scripting-free environment for automating load and scalability testing of web, ERP, and server-based software applications. Test Performance provides rich and customizable reporting to help you identify the presence and cause of system bottlenecks. It captures the network traffic that is rendered when the application under test interacts with a server. This network traffic is then emulated on multiple virtual users while you play back the test. | [Overview](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=started-devops-test-performance-overview) |
+| DevOps Test Embedded | Test Embedded is a complete test and runtime analysis tool set for systems development created in any cross-development environment. Test Embedded provides tools for automated component testing, code coverage, memory leak detection, performance profiling, and UML sequence diagram tracing. | [Overview](https://www.ibm.com/docs/en/devops-test-embedded/9.0.0?topic=guide-overview) |
 
 ## Why integrate IBM DevOps Test Automation with IBM Engineering Test Management
 While test automation is not a "silver bullet" replacement for all manual testing activities and is often misused as a means or reason to reduce the size of test teams, test automation does provide organizations with many benefits, including:
@@ -123,7 +124,12 @@ The Test Workbench adapter is used to create a connection between the **Test UI*
 | 7 | Working in the Engineering Test Management panel, activate the connection to ETM. | <img src="media/t1_28.png" alt="t1_28" style="width:100%; height:auto;"> |
 | 8 | Confirm that the adapter successfully connected to ETM. | <img src="media/t1_29.png" alt="t1_29" style="width:100%; height:auto;"> |
 
-Congratulations on successfully configuring the DevOps Test Adapters to ETM for test automation.
+**1-4 Configuring the Test Integrations & APIs and Test Embedded Adapters**
+As these two test automation solutions have not been installed in the RHEL image, for information on how to configure additional adapters, click on the following links:
+[Configure and Run DevOps Test Integrations & APIs adapter](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=integrations-devops-test-apis-engineering-test-management)
+[Configure and Run DevOps Test Embedded adapter](https://www.ibm.com/docs/en/devops-test-embedded/9.0.0?topic=integrating-engineering-test-management-integration)
+
+Congratulations on successfully configuring the DevOps Test Adapters for ETM to manage and automate testing.
 
 ### 2. Understanding the DevOps Test test script which will be executed from a test case in ETM. ###
 
