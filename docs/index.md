@@ -129,7 +129,7 @@ As these remaining two test automation solutions have not been installed/configu
 [Configure and Run the DevOps Test Integrations & APIs adapter](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=integrations-devops-test-apis-engineering-test-management)</br>
 [Configure and Run the DevOps Test Embedded adapter](https://www.ibm.com/docs/en/devops-test-embedded/9.0.0?topic=integrating-engineering-test-management-integration)</br>
 
-Congratulations on successfully configuring the DevOps Test Adapters for ETM to manage and automate testing.
+*Congratulations on successfully configuring the DevOps Test Adapters for ETM to manage and automate testing.*
 
 ### 2. Understanding the DevOps Test test script which will be executed from a test case in ETM. ###
 
@@ -162,12 +162,31 @@ Congratulations on successfully configuring the DevOps Test Adapters for ETM to 
 | 3 | Click the **Type** drop down listbox and select **DevOps Test Workbench** from the options presented.  | <img src="media/t1_38.png" alt="t1_38" style="width:100%; height:auto;"> |
 | 4 | Set the test script action as **Ready for review** and assign to **Sally**.  | <img src="media/t1_39.png" alt="t1_39" style="width:100%; height:auto;"> |
 | 5 | In the **Test Workbench script details** section, enable **Use test resources that are local to a test machine** and click **Select Adapter**.  | <img src="media/t1_40.png" alt="t1_40" style="width:100%; height:auto;"> |
-| 6 | Select the test adapter which will be used to access the test script in DevOps Test UI. Click Next.  | <img src="media/t1_41.png" alt="t1_41" style="width:100%; height:auto;"> |
-| 7 | Enter the path to the DevOps Test UI workspace and project area within the workspace.</br></br>**/home/sysadmin/project/workspace/JKE_Banking**</br></br>Click Go. | <img src="media/t1_42.png" alt="t1_42" style="width:100%; height:auto;"> |
+| 6 | Select the test adapter which will be used to access the test script in DevOps Test UI. Click **Next**.  | <img src="media/t1_41.png" alt="t1_41" style="width:100%; height:auto;"> |
+| 7 | Enter the path to the DevOps Test UI workspace and project area within the workspace.</br></br>**/home/sysadmin/project/workspace/JKE_Banking**</br></br>Click **Go**. | <img src="media/t1_42.png" alt="t1_42" style="width:100%; height:auto;"> |
 | **NOTE:** | Clicking Go makes a connection to the DevOps Test UI project area returning a list of availabe test scripts. |  |
 | 8 | Select the test script to be imported from DevOps Test UI and click Finish. | <img src="media/t1_43.png" alt="t1_43" style="width:100%; height:auto;"> |
 | 9 | Save the Test Script in ETM. | <img src="media/t1_44.png" alt="t1_44" style="width:100%; height:auto;"> | 
-| 10 | In the Action field, change the state to Approve and save the change. | <img src="media/t1_45.png" alt="t1_45" style="width:100%; height:auto;"> |
+| 10 | In the Action field, change the state to **Approve** and **save** the change. | <img src="media/t1_45.png" alt="t1_45" style="width:100%; height:auto;"> |
+
+** 3-2 Add new test script to ETM Test Case**
+
+| **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
+|:-------------:|:------------- |:------------- |
+| 1 | Working in the JKE Banking (Quality Management) project in ETM, click **Construction** and Browse **Test Cases**. | <img src="media/t1_46.png" alt="t1_46" style="width:100%; height:auto;"> |
+| 2 | Open Test Case 9:Donors Can Choose to Support an Organization | <img src="media/t1_47.png" alt="t1_47" style="width:100%; height:auto;"> |
+| **NOTE:** | Remember when reviewing the automated test script steps in DevOps Test UI:</br></br>United Way was chosen as the donation recipient.</br></br>The test script playback was in a Chrome browser. |  |
+| 3 | Working in the Test Case Execution Records view of the Test Case, add a new Test Case Execution Record by clicking the Generate New Test Case Execution Record icon. | <img src="media/t1_48.png" alt="t1_48" style="width:100%; height:auto;"> |
+| 4 | From the list of available Test Environments, select **Chrome_DB2_Tomcat...** and click **Next**. | <img src="media/t1_49.png" alt="t1_49" style="width:100%; height:auto;"> |
+| **NOTE:** | For the purpose of this exercise, you will just reuse an existing environment. However, know that you could Generate a Test Environment as well. |  |
+| 5 | Enable the Test Environment and click **Next**. | <img src="media/t1_50.png" alt="t1_50" style="width:100%; height:auto;"> |
+| 6 | Select the Test Environment and click **Generate Test Case Execution Records** | <img src="media/t1_51.png" alt="t1_51" style="width:100%; height:auto;"> |
+| 7 | Select the Test Scripts view of the Test Case and click the **Add Test Scripts** icon. | <img src="media/t1_52.png" alt="t1_52" style="width:100%; height:auto;"> |
+| 8 | In the list of available Test Scripts, locate and select the Test Script created in the previous section. Click **Add and Close**. | <img src="media/t1_53.png" alt="t1_53" style="width:100%; height:auto;"> |
+| 9 | Select the existing Manual test script and Remove. | img src="media/t1_54.png" alt="t1_54" style="width:100%; height:auto;"> |
+| 10 | **Save** the Test Case changes. | img src="media/t1_55.png" alt="t1_55" style="width:100%; height:auto;"> |
+
+*Congratulations on successfully configuring the DevOps Test Adapters for ETM to manage and automate testing.*
 
 ### 4. Execute the test by ETM running the test case and observing the DevOps Test autoamted test playback ###
 
