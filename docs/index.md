@@ -204,7 +204,17 @@ As these remaining two test automation solutions have not been installed/configu
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
-| 1 | blah | image link |
+| 1 | Remaining on the Donors Can Choose to Support an Organization Execution record, notice the Overall Verdict outcome.  | <img src="media/t1_61.png" alt="t1_61" style="width:100%; height:auto;"> |
+| 2 | Scroll down in the record to review the process summary table. | <img src="media/t1_62.png" alt="t1_62" style="width:100%; height:auto;"> |
+| 3 | Scroll to top of page and click **Show Result**. | <img src="media/t1_63.png" alt="t1_63" style="width:100%; height:auto;"> |
+| 4 | Review the **Result Details**.</br></br>**Actual Result:** Passed</br>**Test Case:** 9:Donors Can Choose to Support an Organization</br>**Test Script:** 29:AT-Donor can choose Organization</br>**Test Case Execution Records:** 55:Donors Can Choose to Support an Organization. | <img src="media/t1_64.png" alt="t1_64" style="width:100%; height:auto;"> |
+| 5 | Scroll down to review the **Result Details**. Notice how the test execution reports from DevOps Test UI have been attached to the results record. | <img src="media/t1_65.png" alt="t1_65" style="width:100%; height:auto;"> |
+| 6 | Click the Donation[dateTimeStamp].htm file to download saving in the Downloads folder. | <img src="media/t1_66.png" alt="t1_66" style="width:100%; height:auto;"> |
+| 7 | Open File Manager from the RHEL desktop and navigate to the Downloads folder. | <img src="media/t1_67.png" alt="t1_67" style="width:100%; height:auto;"> |
+| 8 | Double click the Donation[dateTimeStamp].htm file to open in a browser. | <img src="media/t1_68.png" alt="t1_68" style="width:100%; height:auto;"> |
+| 9 | Review the Test Log details. Note the test script details in Verification point verdicts section. | <img src="media/t1_69.png" alt="t1_69" style="width:100%; height:auto;"> |
+
+*Congratulations on completing the exercises configuring the DevOps Test adapters, adding an automated test to the JKE Banking (Quality Management) project, linking the test script to a test case, executing the test case, and reviewing the test execution results.*
 
 | Software Installed for Enablement Exercises | Software Version |
 |:---- |:----:|
