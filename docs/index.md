@@ -28,8 +28,8 @@ While test automation is not a "silver bullet" replacement for all manual testin
 | Saving organizations time and money | While not all tests should be automated or can be automated, automated testing reduces the cost of testing by reducing the expensive manual effort executing test scripts which are candidates for test automation. |
 | Helping test teams increase test coverage | Freeing testers from having to execute test scripts manually by following a series of documented test steps allows them to focus on improving the overall test effort - identify missing test cases, focus on exploratory testing, improving test practices eliminating waste, etc... |
 | Improving testing accuracy | Let's face it, people make mistakes. Automated testing is software designed to repeatedly and consistently execute a series of steps against the application under test over and over to verify functions and features. |
-| Accelerating feeback on software quality | As automated testing is faster, can be run as part of a deployment process, and consistently executes to verify software quality, the results of those test executions can be immediately shared directly back to the development team providing continuous feedback on software quality. |
-| Improving team morale | By allowing Testers to focus on improving the testing practice and providing Developers accelerated feedback on the sofware they are developing can only lead to improved morale. |
+| Accelerating feedback on software quality | As automated testing is faster, can be run as part of a deployment process, and consistently executes to verify software quality, the results of those test executions can be immediately shared directly back to the development team providing continuous feedback on software quality. |
+| Improving team morale | By allowing Testers to focus on improving the testing practice and providing Developers accelerated feedback on the software they are developing can only lead to improved morale. |
 
 ## About the learning environment
 
@@ -39,7 +39,7 @@ In order to share details and experience hands on learning with how to configure
 
 ### DevOps Test UI Setup ###
 
-As the scope of this exercise is to share details on how to integrate DevOps Test with ETM and not provide details on how to record and modify an automated test script, a Test UI project has been already created and an automated test script recorded. Details of the test script are a follows:</br>
+As the scope of this exercise is to share details on how to integrate DevOps Test with ETM and not provide details on how to record and modify an automated test script, a Test UI project has been already created and an automated test script recorded. Details of the test script are as follows:</br>
 1. Launches the application under test in a browser.</br>
 2. Modifies several field on the UI to submit a donation to the charity of choosing.</br>
 3. Posts the donation.</br>
@@ -65,7 +65,7 @@ To learn more about test automation capabilities offered by IBM visit [IBM's Dev
 **In this workbook, you will learn how to:**</br>
 1. Configure Test Adapters creating a communication channel between ETM and DevOps Test.</br>
 2. Add a test script to an ETM test case and link to the DevOps Test script for test execution.</br>
-3. Execute the test from ETM by running the test case and observing the DevOps Test autoamted test playback against the application under test.</br>
+3. Execute the test from ETM by running the test case and observing the DevOps Test automated test playback against the application under test.</br>
 4. Review the test execution verdict and result file(s) returned to ETM from DevOps Test solution.</br>
 
 ### 1. Configure Test Adapters creating a communication channel between ETM AND DevOps Test ###
@@ -95,7 +95,7 @@ The Test UI adapter is used to create a connection between the **Functional** te
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
 | 1 | Open a terminal session.  | <img src="media/t1_11.png" alt="t1_11" style="width:100%; height:auto;"> |
-| 2 | Navigate to the following folder within the DevOpsTest installation location: </br>*TestUI installation directory*/FunctionalTester/RQMAdapter/ </br> For this exercise, the installation folder is "/opt/IBM/DevOpsTest"</br></br>**/cd /opt/IBM/DevOpsTest/FunctionalTester/RQMAdapter** | <img src="media/t1_11.png" alt="t1_11" style="width:100%; height:auto;"> |
+| 2 | Navigate to the following folder within the DevOpsTest installation location: </br>*TestUI installation directory*/FunctionalTester/RQMAdapter/ </br> For this exercise, the installation folder is "/opt/IBM/DevOpsTest"</br></br>**cd /opt/IBM/DevOpsTest/FunctionalTester/RQMAdapter** | <img src="media/t1_11.png" alt="t1_11" style="width:100%; height:auto;"> |
 | 3 | As the superuser, execute the following command: </br> **sudo ./configureadapter**</br><br>*sudo password is "Passw0rd" (Passw+zero+rd)* | <img src="media/t1_12.png" alt="t1_12" style="width:100%; height:auto;"> |
 | 4 | In the DevOpsTest UI Adapter user interface, enter the appropriate information for your ETM installation. For the purposes of this exercise, the following was used to establish a connection with ETM.</br></br>**Server URL:** https://ibmjazz.net:9443/qm</br>**Authentication Type:** Username and Password</br>**User ID:** sysadmin</br>**Password:** Passw0rd</br>**Project area:**  JKEBanking (Quality Management) - selected from the picklist</br>**Adapter Name:** DTUI Adapter on rhserver | <img src="media/t1_13.png" alt="t1_13" style="width:100%; height:auto;"> |
 | **NOTE:** | The Project area picklist is automatically populated upon supplying the URL, User ID, and Password values.|  |
@@ -216,8 +216,8 @@ As these remaining two test automation solutions have not been installed/configu
 
 *Congratulations on completing the exercises configuring the DevOps Test adapters, adding an automated test to the JKE Banking (Quality Management) project, linking the test script to a test case, executing the test case, and reviewing the test execution results.*
 
-| Software Installed for Enablement Exercises | Software Version |
-|:---- |:----:|
-| DevOps Test UI | Version 2025.06 (11.0.5) |
-| DevOps Test Performance | Version 2025.06 (11.0.5) |
-| Engineering Lifecycle Management | v7.1 SR1 |
+| Software Installed for Enablement Exercises | Software Version | Access |
+|:---- |:----:|:---:|
+| DevOps Test UI | Version 2025.06 (11.0.5) | Software Start Menu |
+| DevOps Test Performance | Version 2025.06 (11.0.5) | Software Start Menu |
+| Engineering Lifecycle Management | v7.1 SR1 | https://ibmjazz.net:9443 |
