@@ -16,12 +16,12 @@
 |:-------------:|:------------- |:------------- |
 | DevOps Test Hub | Test Hub, a web-based continuous testing platform, enables test teams to run a breadth of tests that includes API, functional, and performance tests as well as bringing together test data, test environments, and test runs and reports into a single, web-based browser for testers and non-testers. | [Overview](https://www.ibm.com/docs/en/devops-test-hub/11.0.6?topic=guide-introduction-devops-test-hub) |
 | DevOps Test UI | Test UI is an object-oriented automated testing tool that tests a wide range of desktop, Web, and mobile applications. Test UI provides automated testing capabilities for functional, regression, GUI, and data-driven testing. | [Overview](https://www.ibm.com/docs/en/SSBLQQ_11.0.6/docs/topics/IntrotoRobotJ.html) |
-| DevOps Test Integrations and APIs | Test Integrations and APIs is an integration testing and virtualization tool that includes capabilities to automate and run tests earlier and more often to find problems sooner in the development cycle.| [Overview](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=started-overview-devops-test-integrations-apis) |
+| DevOps Test Integrations and APIs | Test Integrations and APIs is an integration testing and service virtualization solution that includes capabilities to automate and run tests earlier and more often to find problems sooner in the development cycle.| [Overview](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=started-overview-devops-test-integrations-apis) |
 | DevOps Test Performance | Test Performance is a scripting-free environment for automating load and scalability testing of web, ERP, and server-based software applications. Test Performance provides rich and customizable reporting to help you identify the presence and cause of system bottlenecks. It captures the network traffic that is rendered when the application under test interacts with a server. This network traffic is then emulated on multiple virtual users while you play back the test. | [Overview](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=started-devops-test-performance-overview) |
 | DevOps Test Embedded | Test Embedded is a complete test and runtime analysis tool set for systems development created in any cross-development environment. Test Embedded provides tools for automated component testing, code coverage, memory leak detection, performance profiling, and UML sequence diagram tracing. | [Overview](https://www.ibm.com/docs/en/devops-test-embedded/9.0.0?topic=guide-overview) |
 
 ## Why integrate IBM DevOps Test Automation with IBM Engineering Test Management
-While test automation is not a "silver bullet" replacement for all manual testing activities and is often misused as a means or reason to reduce the size of test teams, test automation does provide organizations with many benefits, including:
+While test automation is not a "silver bullet" replacement for all manual testing activities and may be misused as a means or reason to reduce the size of test teams, test automation does provide organizations with many benefits, including:
 
 | **Value Proposition** | **Explanation** |
 |:-------------:|:------------- |
@@ -29,7 +29,7 @@ While test automation is not a "silver bullet" replacement for all manual testin
 | Helping test teams increase test coverage | Freeing testers from having to execute test scripts manually by following a series of documented test steps allows them to focus on improving the overall test effort - identify missing test cases, focus on exploratory testing, improving test practices eliminating waste, etc... |
 | Improving testing accuracy | Let's face it, people make mistakes. Automated testing is software designed to repeatedly and consistently execute a series of steps against the application under test over and over to verify functions and features. |
 | Accelerating feedback on software quality | As automated testing is faster, can be run as part of a deployment process, and consistently executes to verify software quality, the results of those test executions can be immediately shared directly back to the development team providing continuous feedback on software quality. |
-| Improving team morale | By allowing Testers to focus on improving the testing practice and providing Developers accelerated feedback on the software they are developing can only lead to improved morale. |
+| Improving team morale | By allowing Testers to focus on improving the testing practice and providing Developers accelerated feedback on the software they are commiting for build can only lead to improved morale. |
 
 ## About the learning environment
 
@@ -44,14 +44,18 @@ As the scope of this exercise is to share details on how to integrate DevOps Tes
 2. Modifies several field on the UI to submit a donation to the charity of choosing.</br>
 3. Posts the donation.</br>
 4. Verifies the donation has been successfully submited.</br>
-5. Browser closes/ test ends.</br>
+5. Closes the browser/ ends the test script execution.</br>
 
 ### Application Under Test (AUT) Setup ###
 
-The "JKE Banking - Donations" demo application being subjected to test automation is a simple html file containing javascript. It is deployed as a docker container running on an nginx server to host the index.html file on port 81 (http://127.0.0.1:81) and starts up during boot of the RHEL OS.
+The "Dividends" demo application being subjected to test automation is a simple html file containing javascript. It is deployed as a docker container running on an nginx server to host the index.html file on port 81 (http://127.0.0.1:81) and starts up during boot of the Ubuntu OS. 
+
+<br/>
+
+<img src="media/t_dividends.png" alt="t_dividends" style="width:100%; height:auto;">
 
 ### Chrome/Firefox Browser Setup ###
-Both browser applications have bookmarks available to conveniently access the Workbook, the ELM instance, and the JKE Banking - Donations demo application.
+Both browser applications have bookmarks available to conveniently access the Workbook, the ELM instance, and the Dividends demo application.
 
 ## About this workbook
 The scope of this workbook is to share details on how engineering teams can connect automated test scripts (authored in one of the many DevOps Test solutions) with test cases (managed in Engineering Test Management) for the purpose of automating test execution and delivering feedback on software quality to developers faster. And while the demo guide will share details on how to configure all the different adapter options, this exercise will focus on the end to end story involving DevOps Test UI and ETM as, once an adapter is configured, the process of adding a test script to an ETM test case is the same. 
@@ -97,7 +101,7 @@ The Test UI adapter is used to create a connection between the **Functional** te
 | 1 | Open a terminal session.  | <img src="media/t1_11.png" alt="t1_11" style="width:100%; height:auto;"> |
 | 2 | Navigate to the following folder within the DevOpsTest installation location: </br>*TestUI installation directory*/FunctionalTester/RQMAdapter/ </br> For this exercise, the installation folder is "/opt/IBM/DevOpsTest"</br></br>**cd /opt/IBM/DevOpsTest/FunctionalTester/RQMAdapter** | <img src="media/t1_11.png" alt="t1_11" style="width:100%; height:auto;"> |
 | 3 | As the superuser, execute the following command: </br> **sudo ./configureadapter**</br><br>*sudo password is "Passw0rd" (Passw+zero+rd)* | <img src="media/t1_12.png" alt="t1_12" style="width:100%; height:auto;"> |
-| 4 | In the DevOpsTest UI Adapter user interface, enter the appropriate information for your ETM installation. For the purposes of this exercise, the following was used to establish a connection with ETM.</br></br>**Server URL:** https://ibmjazz.net:9443/qm</br>**Authentication Type:** Username and Password</br>**User ID:** sysadmin</br>**Password:** Passw0rd</br>**Project area:**  JKEBanking (Quality Management) - selected from the picklist</br>**Adapter Name:** DTUI Adapter on rhserver | <img src="media/t1_13.png" alt="t1_13" style="width:100%; height:auto;"> |
+| 4 | In the DevOpsTest UI Adapter user interface, enter the appropriate information for your ETM installation. For the purposes of this exercise, the following was previously used to establish a connection with ETM.</br></br>**Server URL:** https://ibmjazz.net:9443/qm</br>**Authentication Type:** Username and Password</br>**User ID:** sysadmin</br>**Password:** Passw0rd</br>**Project area:**  JKEBanking (Quality Management) - selected from the picklist</br>**Adapter Name:** DTUI Adapter on rhserver | <img src="media/t1_13.png" alt="t1_13" style="width:100%; height:auto;"> |
 | **NOTE:** | The Project area picklist is automatically populated upon supplying the URL, User ID, and Password values.|  |
 | 5 | Click **Start Adapter**. | <img src="media/t1_14.png" alt="t1_14" style="width:100%; height:auto;"> |
 | 6 | Click the **Adapter Console** tab to confirm a connection was made to ETM. | <img src="media/t1_15.png" alt="t1_15" style="width:100%; height:auto;"> |
@@ -113,7 +117,7 @@ The Test Workbench adapter is used to create a connection between the **Test UI*
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
-| 1 | From the RHEL desktop, click **Applications > DevOps Test > DevOps Test UI** to launch the testing application. | <img src="media/t1_21.png" alt="t1_21" style="width:100%; height:auto;"> |
+| 1 | From Ubuntu desktop, click **DevOps Test UI** shortcut to launch the testing application. | <img src="media/t1_21.png" alt="t1_21" style="width:25%; height:auto;"> |
 | 2 | Specify the Workspace and click **Launch**.</br></br>For this exercise leave the workspace as is. | <img src="media/t1_22.png" alt="t1_22" style="width:100%; height:auto;"> |
 | 3 | After DevOps Test UI has opened, click **Window** on the toolbar and select **Preferences** from the options presented. | <img src="media/t1_23.png" alt="t1_23" style="width:100%; height:auto;"> |
 | 4 | On the Preferences window, select **Engineering Test Management**. | <img src="media/t1_24.png" alt="t1_24" style="width:100%; height:auto;"> |
@@ -125,7 +129,7 @@ The Test Workbench adapter is used to create a connection between the **Test UI*
 | 8 | Confirm that the adapter successfully connected to ETM. | <img src="media/t1_29.png" alt="t1_29" style="width:100%; height:auto;"> |
 
 **1-4 Configuring the Test Integrations & APIs and Test Embedded Adapters**
-As these remaining two test automation solutions have not been installed/configured in the RHEL image, click on the following links to review how to integrate ETM with additional test automation solutions:</br></br>
+As these remaining two test automation solutions have not been installed/configured in the Ubuntu image, click on the following links to review how to integrate ETM with additional test automation solutions:</br></br>
 [Configure and Run the DevOps Test Integrations & APIs adapter](https://www.ibm.com/docs/en/devops-test-workbench/11.0.6?topic=integrations-devops-test-apis-engineering-test-management)</br>
 [Configure and Run the DevOps Test Embedded adapter](https://www.ibm.com/docs/en/devops-test-embedded/9.0.0?topic=integrating-engineering-test-management-integration)</br>
 
@@ -137,17 +141,17 @@ As these remaining two test automation solutions have not been installed/configu
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
-| 1 | Working in the DevOps UI Test application, double click the **Donation** test script if not already open in the Test Editor view.| <img src="media/t1_30.png" alt="t1_30" style="width:100%; height:auto;"> |
+| 1 | Working in the DevOps UI Test application, double click the **dividendContribution** test script if not already open in the Test Editor view.| <img src="media/t1_30.png" alt="t1_30" style="width:100%; height:auto;"> |
 | 2 | In the View panel, click the **SmartShot View** to enable. | <img src="media/t1_31.png" alt="t1_31" style="width:100%; height:auto;"> |
 | 3 | In the Test Contents view, fully expand the **Test Resources** and **Launch application** twistys. | <img src="media/t1_32.png" alt="t1_32" style="width:100%; height:auto;"> |
 | 4 | Under the UI Test entry, click the **RTW_WebUI_Browser_Selection="Chrome"** line. | <img src="media/t1_33.png" alt="t1_33" style="width:100%; height:auto;"> |
 | 5 | In the **Variable Details** view, note that this test is configured to start an instance of Chrome.</br></br>*However, this setting may be changed to start a different browser or the browser setting could be provided through a data source allowing the test to be executed against a variety of browser types.* | <img src="media/t1_34.png" alt="t1_34" style="width:100%; height:auto;"> |
-| 6 | Click through the various test script commands listed starting from **Launch application: 127.0.0.1:81** and refer to the SmartShot View seeing how the application is being exercised by the test script.</br></br>The first six steps are interacting with the application as a user would - clicking controls and entering data. The seventh step is verifying that the user was able to successfully send a donation of $100 CAD to the United Way organization. | <img src="media/t1_35.png" alt="t1_35" style="width:100%; height:auto;"> |
+| 6 | Click through the various test script commands listed starting from **Launch application: echologic.com:81** and refer to the SmartShot View seeing how the application is being exercised by the test script.</br></br>The first six steps are interacting with the application as a user would - clicking controls and entering data. The seventh step is verifying that the user was able to successfully send a donation of $100 CAD to the United Way organization. | <img src="media/t1_35.png" alt="t1_35" style="width:100%; height:auto;"> |
 | **NOTE:** | This example was a very simple test. However, now that this user story can be verified automatically, it can now be added to Test Case **9: Donors Can Choose to Support an Organization** in ETM, and can repeatedly be executed as part of future ETM test plans. |  | 
 
 ### 3. Create an ETM test script, import the DevOps Test script, and add to an ETM test case for test execution ###
 
-**NOTE:** Before starting the exercise, be sure to start the DevOps Test UI adapter and confirm its availability on the ETM Adapter Console page.</br></br>
+**NOTE:** Before starting the exercise, be sure to start the DevOps Test UI adapter if not already running and confirm its availability on the ETM Adapter Console page.</br></br>
 **Start adapter in DevOps Test UI**</br>
 <img src="media/t_startAdapter.png" alt="t_startAdapter" style="width:50%; height:auto;"></br></br>
 **Verify adapter in ETM Adapter Console**</br>
@@ -163,10 +167,10 @@ As these remaining two test automation solutions have not been installed/configu
 | 4 | Set the test script action as **Ready for review** and assign to **Sally**.  | <img src="media/t1_39.png" alt="t1_39" style="width:100%; height:auto;"> |
 | 5 | In the **Test Workbench script details** section, enable **Use test resources that are local to a test machine** and click **Select Adapter**.  | <img src="media/t1_40.png" alt="t1_40" style="width:100%; height:auto;"> |
 | 6 | Select the test adapter which will be used to access the test script in DevOps Test UI. Click **Next**.  | <img src="media/t1_41.png" alt="t1_41" style="width:100%; height:auto;"> |
-| 7 | Enter the path to the DevOps Test UI workspace and project area within the workspace.</br></br>**/home/sysadmin/project/workspace/JKE_Banking**</br></br>Click **Go**. | <img src="media/t1_42.png" alt="t1_42" style="width:100%; height:auto;"> |
+| 7 | Enter the path to the DevOps Test UI workspace and project area within the workspace.</br></br>**/home/sysadmin/project/workspace/EchoLogic**</br></br>Click **Go**. | <img src="media/t1_42.png" alt="t1_42" style="width:100%; height:auto;"> |
 | **NOTE:** | Clicking Go makes a connection to the DevOps Test UI project area returning a list of available test scripts. |  |
 | 8 | Select the test script to be imported from DevOps Test UI and click Finish. | <img src="media/t1_43.png" alt="t1_43" style="width:100%; height:auto;"> |
-| 9 | Save the Test Script in ETM. | <img src="media/t1_44.png" alt="t1_44" style="width:100%; height:auto;"> | 
+| 9 | Save the Test Script in ETM. | <img src="media/t1_44.png" alt="t1_44" style="width:50%; height:auto;"> | 
 | 10 | In the Action field, change the state to **Approve** and **save** the change. | <img src="media/t1_45.png" alt="t1_45" style="width:100%; height:auto;"> |
 
 **3-2 Add new test script to ETM Test Case**
@@ -174,8 +178,8 @@ As these remaining two test automation solutions have not been installed/configu
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
 | 1 | Working in the JKE Banking (Quality Management) project in ETM, click **Construction** and Browse **Test Cases**. | <img src="media/t1_46.png" alt="t1_46" style="width:100%; height:auto;"> |
-| 2 | Open Test Case 9:Donors Can Choose to Support an Organization | <img src="media/t1_47.png" alt="t1_47" style="width:100%; height:auto;"> |
-| **NOTE:** | Remember when reviewing the automated test script steps in DevOps Test UI:</br>1. United Way was chosen by the user as the donation recipient.</br>2. The test script playback was in a Chrome browser. |  |
+| 2 | Open **Test Case 9:Donors Can Choose to Support an Organization** | <img src="media/t1_47.png" alt="t1_47" style="width:100%; height:auto;"> |
+| **NOTE:** | Remember when reviewing the automated test script steps in DevOps Test UI:</br>1. Humane Society was chosen by the user as the donation recipient.</br>2. The test script playback was in a Chrome browser. |  |
 | 3 | Working in the Test Case Execution Records view of the Test Case, add a new Test Case Execution Record by clicking the Generate New Test Case Execution Record icon. | <img src="media/t1_48.png" alt="t1_48" style="width:100%; height:auto;"> |
 | 4 | From the list of available Test Environments, select **Chrome_DB2_Tomcat...** and click **Next**. | <img src="media/t1_49.png" alt="t1_49" style="width:100%; height:auto;"> |
 | **NOTE:** | For the purpose of this exercise, you will just reuse an existing environment. However, know that you could Generate a Test Environment as well. |  |
@@ -207,10 +211,10 @@ As these remaining two test automation solutions have not been installed/configu
 | 1 | Remaining on the Donors Can Choose to Support an Organization Execution record, notice the Overall Verdict outcome.  | <img src="media/t1_61.png" alt="t1_61" style="width:100%; height:auto;"> |
 | 2 | Scroll down in the record to review the process summary table. | <img src="media/t1_62.png" alt="t1_62" style="width:100%; height:auto;"> |
 | 3 | Scroll to top of page and click **Show Result**. | <img src="media/t1_63.png" alt="t1_63" style="width:100%; height:auto;"> |
-| 4 | Review the **Result Details**.</br></br>**Actual Result:** Passed</br>**Test Case:** 9:Donors Can Choose to Support an Organization</br>**Test Script:** 29:AT-Donor can choose Organization</br>**Test Case Execution Records:** 55:Donors Can Choose to Support an Organization. | <img src="media/t1_64.png" alt="t1_64" style="width:100%; height:auto;"> |
+| 4 | Review the **Result Details**.</br></br>**Actual Result:** Passed</br>**Test Case:** 9:Donors Can Choose to Support an Organization</br>**Test Script:** 29:AT-Donor can choose Organization</br>**Test Case Execution Records:** 54:Donors Can Choose to Support an Organization. | <img src="media/t1_64.png" alt="t1_64" style="width:100%; height:auto;"> |
 | 5 | Scroll down to review the **Result Details**. Notice how the test execution reports from DevOps Test UI have been attached to the results record. | <img src="media/t1_65.png" alt="t1_65" style="width:100%; height:auto;"> |
-| 6 | Click the Donation[dateTimeStamp].htm file to download saving in the Downloads folder. | <img src="media/t1_66.png" alt="t1_66" style="width:100%; height:auto;"> |
-| 7 | Open File Manager from the RHEL desktop and navigate to the Downloads folder. | <img src="media/t1_67.png" alt="t1_67" style="width:100%; height:auto;"> |
+| 6 | Click the dividendContribution[dateTimeStamp].htm file to download saving in the Downloads folder. | <img src="media/t1_66.png" alt="t1_66" style="width:100%; height:auto;"> |
+| 7 | Open File Manager from the Ubuntu desktop and navigate to the Downloads folder. | <img src="media/t1_67.png" alt="t1_67" style="width:100%; height:auto;"> |
 | 8 | Double click the Donation[dateTimeStamp].htm file to open in a browser. | <img src="media/t1_68.png" alt="t1_68" style="width:100%; height:auto;"> |
 | 9 | Review the Test Log details. Note the test script details in Verification point verdicts section. | <img src="media/t1_69.png" alt="t1_69" style="width:100%; height:auto;"> |
 
@@ -220,4 +224,4 @@ As these remaining two test automation solutions have not been installed/configu
 |:---- |:----:|:---:|
 | DevOps Test UI | Version 2025.06 (11.0.5) | Software Start Menu |
 | DevOps Test Performance | Version 2025.06 (11.0.5) | Software Start Menu |
-| Engineering Lifecycle Management | v7.1 SR1 | https://ibmjazz.net:9443 |
+| Engineering Lifecycle Management | v7.1 | https://ibmjazz.net:9443 |
