@@ -117,7 +117,7 @@ The Test Workbench adapter is used to create a connection between the **Test UI*
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
-| 1 | From Ubuntu desktop, click **DevOps Test UI** shortcut to launch the testing application. | <img src="media/t1_21.png" alt="t1_21" style="width:25%; height:auto;"> |
+| 1 | From Ubuntu desktop, click **DevOps Test UI** shortcut to launch the testing application. | <img src="media/t1_21.png" alt="t1_21" style="width:15%; height:auto;"> |
 | 2 | Specify the Workspace and click **Launch**.</br></br>For this exercise leave the workspace as is. | <img src="media/t1_22.png" alt="t1_22" style="width:100%; height:auto;"> |
 | 3 | After DevOps Test UI has opened, click **Window** on the toolbar and select **Preferences** from the options presented. | <img src="media/t1_23.png" alt="t1_23" style="width:100%; height:auto;"> |
 | 4 | On the Preferences window, select **Engineering Test Management**. | <img src="media/t1_24.png" alt="t1_24" style="width:100%; height:auto;"> |
@@ -167,7 +167,7 @@ As these remaining two test automation solutions have not been installed/configu
 | 4 | Set the test script action as **Ready for review** and assign to **Sally**.  | <img src="media/t1_39.png" alt="t1_39" style="width:100%; height:auto;"> |
 | 5 | In the **Test Workbench script details** section, enable **Use test resources that are local to a test machine** and click **Select Adapter**.  | <img src="media/t1_40.png" alt="t1_40" style="width:100%; height:auto;"> |
 | 6 | Select the test adapter which will be used to access the test script in DevOps Test UI. Click **Next**.  | <img src="media/t1_41.png" alt="t1_41" style="width:100%; height:auto;"> |
-| 7 | Enter the path to the DevOps Test UI workspace and project area within the workspace.</br></br>**/home/sysadmin/project/workspace/EchoLogic**</br></br>Click **Go**. | <img src="media/t1_42.png" alt="t1_42" style="width:100%; height:auto;"> |
+| 7 | Enter the path to the DevOps Test UI workspace and project area within the workspace.</br></br>**/home/sysadmin/IBM/devopstest/workspace/EchoLogic**</br></br>Click **Go**. | <img src="media/t1_42.png" alt="t1_42" style="width:100%; height:auto;"> |
 | **NOTE:** | Clicking Go makes a connection to the DevOps Test UI project area returning a list of available test scripts. |  |
 | 8 | Select the test script to be imported from DevOps Test UI and click Finish. | <img src="media/t1_43.png" alt="t1_43" style="width:100%; height:auto;"> |
 | 9 | Save the Test Script in ETM. | <img src="media/t1_44.png" alt="t1_44" style="width:50%; height:auto;"> | 
@@ -180,15 +180,15 @@ As these remaining two test automation solutions have not been installed/configu
 | 1 | Working in the JKE Banking (Quality Management) project in ETM, click **Construction** and Browse **Test Cases**. | <img src="media/t1_46.png" alt="t1_46" style="width:100%; height:auto;"> |
 | 2 | Open **Test Case 9:Donors Can Choose to Support an Organization** | <img src="media/t1_47.png" alt="t1_47" style="width:100%; height:auto;"> |
 | **NOTE:** | Remember when reviewing the automated test script steps in DevOps Test UI:</br>1. Humane Society was chosen by the user as the donation recipient.</br>2. The test script playback was in a Chrome browser. |  |
-| 3 | Working in the Test Case Execution Records view of the Test Case, add a new Test Case Execution Record by clicking the Generate New Test Case Execution Record icon. | <img src="media/t1_48.png" alt="t1_48" style="width:100%; height:auto;"> |
-| 4 | From the list of available Test Environments, select **Chrome_DB2_Tomcat...** and click **Next**. | <img src="media/t1_49.png" alt="t1_49" style="width:100%; height:auto;"> |
+| 3 | Select the Test Scripts view of the Test Case and click the **Add Test Scripts** icon. | <img src="media/t1_52.png" alt="t1_52" style="width:100%; height:auto;"> |
+| 4 | In the list of available Test Scripts, locate and select the Test Script created in the previous section - **AT-Donor can choose organization**. Click **Add and Close**. | <img src="media/t1_53.png" alt="t1_53" style="width:100%; height:auto;"> |
+| 5 | Select the existing Manual test script and Remove. | <img src="media/t1_54.png" alt="t1_54" style="width:100%; height:auto;"> |
+| 6 | Working in the Test Case Execution Records view of the Test Case, **add a new Test Case Execution Record** by clicking the Generate New Test Case Execution Record icon. | <img src="media/t1_48.png" alt="t1_48" style="width:100%; height:auto;"> |
+| 7 | From the list of available Test Environments, select **Chrome_DB2_Tomcat...** and click **Next**. | <img src="media/t1_49.png" alt="t1_49" style="width:100%; height:auto;"> |
 | **NOTE:** | For the purpose of this exercise, you will just reuse an existing environment. However, know that you could Generate a Test Environment as well. |  |
-| 5 | Enable the Test Environment and click **Next**. | <img src="media/t1_50.png" alt="t1_50" style="width:100%; height:auto;"> |
-| 6 | Select the Test Environment and click **Generate Test Case Execution Records** | <img src="media/t1_51.png" alt="t1_51" style="width:100%; height:auto;"> |
-| 7 | Select the Test Scripts view of the Test Case and click the **Add Test Scripts** icon. | <img src="media/t1_52.png" alt="t1_52" style="width:100%; height:auto;"> |
-| 8 | In the list of available Test Scripts, locate and select the Test Script created in the previous section - **AT-Donor can choose organization**. Click **Add and Close**. | <img src="media/t1_53.png" alt="t1_53" style="width:100%; height:auto;"> |
-| 9 | Select the existing Manual test script and Remove. | <img src="media/t1_54.png" alt="t1_54" style="width:100%; height:auto;"> |
-| 10 | **Save** the Test Case changes. | <img src="media/t1_55.png" alt="t1_55" style="width:100%; height:auto;"> |
+| 8 | Enable the Test Environment and click **Next**. | <img src="media/t1_50.png" alt="t1_50" style="width:100%; height:auto;"> |
+| 9 | Select the Test Environment and click **Generate Test Case Execution Records** | <img src="media/t1_51.png" alt="t1_51" style="width:100%; height:auto;"> |
+| 10 | Notice the addition of the new Test Case Execution Record containing the automated test script as the default. <br/> **Save** the Test Case changes (if required). | <img src="media/t1_55.png" alt="t1_55" style="width:100%; height:auto;"> |
 
 *Congratulations on successfully adding the DevOps Test UI test script to ETM for automated testing.*
 
@@ -197,14 +197,14 @@ As these remaining two test automation solutions have not been installed/configu
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
 | 1 | Continuing to work in the JKE Banking (Qualtiy Management) project and within the 9:Donors Can Choose to Support and Organization test case, click the Run Test Case icon. | <img src="media/t1_56.png" alt="t1_56" style="width:100%; height:auto;"> |
-| 2 | Select Run from the options presented. | <img src="media/t1_57.png" alt="t1_57" style="width:100%; height:auto;"> |
+| 2 | Select Run from the options presented. | <img src="media/t1_57.png" alt="t1_57" style="width:50%; height:auto;"> |
 | 3 | Select the appropriate Test Environment and click **Finish**. | <img src="media/t1_58.png" alt="t1_58" style="width:100%; height:auto;"> |
 | **NOTE:** | When the test script starts to run, it is important to not interfere with the playback. **DO NOT interact with the computer screen**. | <img src="media/t1_59.png" alt="t1_59" style="width:100%; height:auto;"> |
-| 4 | Automated test playback is complete when you see 100% in the Summary panel. | <img src="media/t1_60.png" alt="t1_60" style="width:100%; height:auto;"> |
+| 4 | Automated test playback is complete when you see 100% in the Summary panel. <br/><br/> **NOTE:** You may experience a test execution failure due to an intermittent issue in the image. If the test case execution does fail, simply re-run the test case to return a Passed Verdict. | <img src="media/t1_60.png" alt="t1_60" style="width:100%; height:auto;"> |
 
 *Congratulations on successfully executing the DevOps Test UI test script via an ETM test case to quickly verify the associated user story.*
 
-### 5. Review the test execution verdict and result file returned to ETM from DevOps Test solution ###
+### 5. Review the test execution verdict and result file returned to ETM from the DevOps Test UI solution ###
 
 | **Step** | <div style="width:250px">**Details**</div>  | **Additional Information** |
 |:-------------:|:------------- |:------------- |
